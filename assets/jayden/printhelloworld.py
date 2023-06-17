@@ -1,2 +1,2 @@
-def intro():
+def talk():
   print('helloworld')
