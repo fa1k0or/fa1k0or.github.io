@@ -144,4 +144,3 @@ if CAM1.isOpened():
                 cv2.imshow("screen2", frame2)
 
                 cv2.waitKey(60) #give passing time 
-
