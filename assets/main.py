@@ -1,3 +1,3 @@
 from chen.printhelloworld import talk
 
-talk()
+talk('string')
