@@ -27,6 +27,3 @@
 ### Limitations and Implications
 
 ### Next Steps
-
-## Conclusion
-
