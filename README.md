@@ -12,7 +12,7 @@
 
 ### Overview
 
-### ROS
+### ROS2
 
 ### Hand/Pose Detection
 
