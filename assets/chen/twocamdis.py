@@ -61,7 +61,6 @@ if CAM1.isOpened():
                 P1 = []
                 P2 = []
                 P = []
-                d = []
 
                 #read_code0, frame0 = cap0.read() #get frame and success
                 read_code1, frame1 = CAM1.read()
