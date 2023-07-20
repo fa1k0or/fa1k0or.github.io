@@ -1,0 +1,9 @@
+/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_bringup/CMakeFiles/install/strip.dir
+/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_bringup/CMakeFiles/install/local.dir
+/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_bringup/CMakeFiles/install.dir
+/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_bringup/CMakeFiles/list_install_components.dir
+/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_bringup/CMakeFiles/rebuild_cache.dir
+/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_bringup/CMakeFiles/edit_cache.dir
+/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_bringup/CMakeFiles/test.dir
+/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_bringup/CMakeFiles/originbot_bringup_uninstall.dir
+/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_bringup/CMakeFiles/uninstall.dir

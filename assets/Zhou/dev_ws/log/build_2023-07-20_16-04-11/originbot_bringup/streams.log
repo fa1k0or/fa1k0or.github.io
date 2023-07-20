@@ -1,0 +1,30 @@
+[0.661s] Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --build /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_bringup -- -j4 -l4
+[1.296s] Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --build /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_bringup -- -j4 -l4
+[1.528s] Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --install /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_bringup
+[1.646s] -- Install configuration: ""
+[1.676s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/share/originbot_bringup/launch
+[1.678s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/share/originbot_bringup/launch/camera.launch.py
+[1.679s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/share/originbot_bringup/launch/camera_internal.launch.py
+[1.680s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/share/originbot_bringup/launch/joy_teleop.launch.py
+[1.683s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/share/originbot_bringup/launch/originbot.launch.py
+[1.684s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/share/originbot_bringup/launch/ydlidar.launch.py
+[1.689s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/share/originbot_bringup/param
+[1.690s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/share/originbot_bringup/param/ydlidar.yaml
+[1.691s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/share/originbot_bringup/config
+[1.692s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/share/originbot_bringup/config/joy.yaml
+[1.693s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/share/ament_index/resource_index/package_run_dependencies/originbot_bringup
+[1.694s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/share/ament_index/resource_index/parent_prefix_path/originbot_bringup
+[1.695s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/share/originbot_bringup/environment/ament_prefix_path.sh
+[1.696s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/share/originbot_bringup/environment/ament_prefix_path.dsv
+[1.698s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/share/originbot_bringup/environment/path.sh
+[1.699s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/share/originbot_bringup/environment/path.dsv
+[1.700s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/share/originbot_bringup/local_setup.bash
+[1.701s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/share/originbot_bringup/local_setup.sh
+[1.732s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/share/originbot_bringup/local_setup.zsh
+[1.734s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/share/originbot_bringup/local_setup.dsv
+[1.735s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/share/originbot_bringup/package.dsv
+[1.736s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/share/ament_index/resource_index/packages/originbot_bringup
+[1.737s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/share/originbot_bringup/cmake/originbot_bringupConfig.cmake
+[1.738s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/share/originbot_bringup/cmake/originbot_bringupConfig-version.cmake
+[1.739s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/share/originbot_bringup/package.xml
+[1.809s] Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --install /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_bringup

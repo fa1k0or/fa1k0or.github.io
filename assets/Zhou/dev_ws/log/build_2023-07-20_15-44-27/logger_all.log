@@ -1,0 +1,1039 @@
+[3.047s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[3.048s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f9f540550>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=4, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f9f540550>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f9f540a90>)
+[3.313s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[3.315s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[3.315s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[3.316s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[3.316s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[3.317s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[3.318s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/root/fa1k0or.github.io/assets/Zhou/dev_ws'
+[3.319s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[3.320s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[3.321s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[3.322s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[3.323s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[3.324s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[3.324s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[3.325s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[3.326s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[3.619s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[3.620s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[3.620s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[3.621s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[3.622s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[3.623s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[3.624s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[3.625s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[3.626s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[3.627s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[3.628s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[3.629s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[3.630s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[3.631s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[3.632s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[3.633s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[3.634s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[3.635s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[3.635s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[3.636s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[3.637s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[3.638s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[3.638s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[3.639s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[3.640s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[3.641s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[3.641s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[3.642s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[3.643s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot) by extensions ['ignore', 'ignore_ament_install']
+[3.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot) by extension 'ignore'
+[3.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot) by extension 'ignore_ament_install'
+[3.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot) by extensions ['colcon_pkg']
+[3.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot) by extension 'colcon_pkg'
+[3.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot) by extensions ['colcon_meta']
+[3.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot) by extension 'colcon_meta'
+[3.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot) by extensions ['ros']
+[3.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot) by extension 'ros'
+[3.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot) by extensions ['cmake', 'python']
+[3.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot) by extension 'cmake'
+[3.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot) by extension 'python'
+[3.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot) by extensions ['python_setup_py']
+[3.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot) by extension 'python_setup_py'
+[3.655s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/images) by extensions ['ignore', 'ignore_ament_install']
+[3.656s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/images) by extension 'ignore'
+[3.657s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/images) by extension 'ignore_ament_install'
+[3.658s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/images) by extensions ['colcon_pkg']
+[3.658s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/images) by extension 'colcon_pkg'
+[3.659s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/images) by extensions ['colcon_meta']
+[3.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/images) by extension 'colcon_meta'
+[3.661s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/images) by extensions ['ros']
+[3.661s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/images) by extension 'ros'
+[3.663s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/images) by extensions ['cmake', 'python']
+[3.663s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/images) by extension 'cmake'
+[3.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/images) by extension 'python'
+[3.665s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/images) by extensions ['python_setup_py']
+[3.666s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/images) by extension 'python_setup_py'
+[3.667s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_audio) by extensions ['ignore', 'ignore_ament_install']
+[3.668s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_audio) by extension 'ignore'
+[3.669s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_audio) by extension 'ignore_ament_install'
+[3.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_audio) by extensions ['colcon_pkg']
+[3.670s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_audio) by extension 'colcon_pkg'
+[3.671s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_audio) by extensions ['colcon_meta']
+[3.672s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_audio) by extension 'colcon_meta'
+[3.673s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_audio) by extensions ['ros']
+[3.673s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_audio) by extension 'ros'
+[3.674s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_audio) by extensions ['cmake', 'python']
+[3.675s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_audio) by extension 'cmake'
+[3.676s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_audio) by extension 'python'
+[3.677s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_audio) by extensions ['python_setup_py']
+[3.677s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_audio) by extension 'python_setup_py'
+[3.679s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_audio/audio_control) by extensions ['ignore', 'ignore_ament_install']
+[3.680s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_audio/audio_control) by extension 'ignore'
+[3.681s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_audio/audio_control) by extension 'ignore_ament_install'
+[3.682s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_audio/audio_control) by extensions ['colcon_pkg']
+[3.683s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_audio/audio_control) by extension 'colcon_pkg'
+[3.684s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_audio/audio_control) by extensions ['colcon_meta']
+[3.685s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_audio/audio_control) by extension 'colcon_meta'
+[3.686s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_audio/audio_control) by extensions ['ros']
+[3.687s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_audio/audio_control) by extension 'ros'
+[3.725s] DEBUG:colcon.colcon_core.package_identification:Package 'src/originbot/originbot_audio/audio_control' with type 'ros.ament_cmake' and name 'audio_control'
+[3.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_audio/hobot_audio) by extensions ['ignore', 'ignore_ament_install']
+[3.728s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_audio/hobot_audio) by extension 'ignore'
+[3.728s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_audio/hobot_audio) by extension 'ignore_ament_install'
+[3.729s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_audio/hobot_audio) by extensions ['colcon_pkg']
+[3.730s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_audio/hobot_audio) by extension 'colcon_pkg'
+[3.730s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_audio/hobot_audio) by extensions ['colcon_meta']
+[3.731s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_audio/hobot_audio) by extension 'colcon_meta'
+[3.732s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_audio/hobot_audio) by extensions ['ros']
+[3.732s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_audio/hobot_audio) by extension 'ros'
+[3.739s] DEBUG:colcon.colcon_core.package_identification:Package 'src/originbot/originbot_audio/hobot_audio' with type 'ros.ament_cmake' and name 'hobot_audio'
+[3.740s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_base) by extensions ['ignore', 'ignore_ament_install']
+[3.741s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_base) by extension 'ignore'
+[3.742s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_base) by extension 'ignore_ament_install'
+[3.742s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_base) by extensions ['colcon_pkg']
+[3.743s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_base) by extension 'colcon_pkg'
+[3.743s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_base) by extensions ['colcon_meta']
+[3.743s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_base) by extension 'colcon_meta'
+[3.744s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_base) by extensions ['ros']
+[3.744s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_base) by extension 'ros'
+[3.754s] DEBUG:colcon.colcon_core.package_identification:Package 'src/originbot/originbot_base' with type 'ros.ament_cmake' and name 'originbot_base'
+[3.755s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_bringup) by extensions ['ignore', 'ignore_ament_install']
+[3.756s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_bringup) by extension 'ignore'
+[3.756s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_bringup) by extension 'ignore_ament_install'
+[3.757s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_bringup) by extensions ['colcon_pkg']
+[3.758s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_bringup) by extension 'colcon_pkg'
+[3.758s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_bringup) by extensions ['colcon_meta']
+[3.759s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_bringup) by extension 'colcon_meta'
+[3.759s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_bringup) by extensions ['ros']
+[3.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_bringup) by extension 'ros'
+[3.769s] DEBUG:colcon.colcon_core.package_identification:Package 'src/originbot/originbot_bringup' with type 'ros.ament_cmake' and name 'originbot_bringup'
+[3.770s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning) by extensions ['ignore', 'ignore_ament_install']
+[3.771s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning) by extension 'ignore'
+[3.771s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning) by extension 'ignore_ament_install'
+[3.772s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning) by extensions ['colcon_pkg']
+[3.772s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning) by extension 'colcon_pkg'
+[3.773s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning) by extensions ['colcon_meta']
+[3.773s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning) by extension 'colcon_meta'
+[3.774s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning) by extensions ['ros']
+[3.774s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning) by extension 'ros'
+[3.775s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning) by extensions ['cmake', 'python']
+[3.775s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning) by extension 'cmake'
+[3.776s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning) by extension 'python'
+[3.776s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning) by extensions ['python_setup_py']
+[3.776s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning) by extension 'python_setup_py'
+[3.778s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning/body_tracking) by extensions ['ignore', 'ignore_ament_install']
+[3.779s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning/body_tracking) by extension 'ignore'
+[3.779s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning/body_tracking) by extension 'ignore_ament_install'
+[3.780s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning/body_tracking) by extensions ['colcon_pkg']
+[3.780s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning/body_tracking) by extension 'colcon_pkg'
+[3.781s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning/body_tracking) by extensions ['colcon_meta']
+[3.781s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning/body_tracking) by extension 'colcon_meta'
+[3.782s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning/body_tracking) by extensions ['ros']
+[3.782s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning/body_tracking) by extension 'ros'
+[3.790s] DEBUG:colcon.colcon_core.package_identification:Package 'src/originbot/originbot_deeplearning/body_tracking' with type 'ros.ament_cmake' and name 'body_tracking'
+[3.791s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning/gesture_control) by extensions ['ignore', 'ignore_ament_install']
+[3.792s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning/gesture_control) by extension 'ignore'
+[3.793s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning/gesture_control) by extension 'ignore_ament_install'
+[3.793s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning/gesture_control) by extensions ['colcon_pkg']
+[3.794s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning/gesture_control) by extension 'colcon_pkg'
+[3.794s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning/gesture_control) by extensions ['colcon_meta']
+[3.795s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning/gesture_control) by extension 'colcon_meta'
+[3.795s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning/gesture_control) by extensions ['ros']
+[3.796s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning/gesture_control) by extension 'ros'
+[3.802s] DEBUG:colcon.colcon_core.package_identification:Package 'src/originbot/originbot_deeplearning/gesture_control' with type 'ros.ament_cmake' and name 'gesture_control'
+[3.804s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning/line_follower_perception) by extensions ['ignore', 'ignore_ament_install']
+[3.804s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning/line_follower_perception) by extension 'ignore'
+[3.805s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning/line_follower_perception) by extension 'ignore_ament_install'
+[3.806s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning/line_follower_perception) by extensions ['colcon_pkg']
+[3.806s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning/line_follower_perception) by extension 'colcon_pkg'
+[3.807s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning/line_follower_perception) by extensions ['colcon_meta']
+[3.807s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning/line_follower_perception) by extension 'colcon_meta'
+[3.808s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning/line_follower_perception) by extensions ['ros']
+[3.808s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning/line_follower_perception) by extension 'ros'
+[3.816s] DEBUG:colcon.colcon_core.package_identification:Package 'src/originbot/originbot_deeplearning/line_follower_perception' with type 'ros.ament_cmake' and name 'line_follower_perception'
+[3.817s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning/parking_search) by extensions ['ignore', 'ignore_ament_install']
+[3.818s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning/parking_search) by extension 'ignore'
+[3.819s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning/parking_search) by extension 'ignore_ament_install'
+[3.819s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning/parking_search) by extensions ['colcon_pkg']
+[3.820s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning/parking_search) by extension 'colcon_pkg'
+[3.820s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning/parking_search) by extensions ['colcon_meta']
+[3.821s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning/parking_search) by extension 'colcon_meta'
+[3.821s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning/parking_search) by extensions ['ros']
+[3.822s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning/parking_search) by extension 'ros'
+[3.828s] DEBUG:colcon.colcon_core.package_identification:Package 'src/originbot/originbot_deeplearning/parking_search' with type 'ros.ament_cmake' and name 'parking_search'
+[3.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning/play_football) by extensions ['ignore', 'ignore_ament_install']
+[3.830s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning/play_football) by extension 'ignore'
+[3.830s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning/play_football) by extension 'ignore_ament_install'
+[3.831s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning/play_football) by extensions ['colcon_pkg']
+[3.831s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning/play_football) by extension 'colcon_pkg'
+[3.832s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning/play_football) by extensions ['colcon_meta']
+[3.832s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning/play_football) by extension 'colcon_meta'
+[3.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning/play_football) by extensions ['ros']
+[3.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_deeplearning/play_football) by extension 'ros'
+[3.846s] DEBUG:colcon.colcon_core.package_identification:Package 'src/originbot/originbot_deeplearning/play_football' with type 'ros.ament_cmake' and name 'play_football'
+[3.847s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_demo) by extensions ['ignore', 'ignore_ament_install']
+[3.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_demo) by extension 'ignore'
+[3.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_demo) by extension 'ignore_ament_install'
+[3.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_demo) by extensions ['colcon_pkg']
+[3.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_demo) by extension 'colcon_pkg'
+[3.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_demo) by extensions ['colcon_meta']
+[3.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_demo) by extension 'colcon_meta'
+[3.851s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_demo) by extensions ['ros']
+[3.851s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_demo) by extension 'ros'
+[3.857s] DEBUG:colcon.colcon_core.package_identification:Package 'src/originbot/originbot_demo' with type 'ros.ament_python' and name 'originbot_demo'
+[3.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_driver) by extensions ['ignore', 'ignore_ament_install']
+[3.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_driver) by extension 'ignore'
+[3.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_driver) by extension 'ignore_ament_install'
+[3.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_driver) by extensions ['colcon_pkg']
+[3.861s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_driver) by extension 'colcon_pkg'
+[3.862s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_driver) by extensions ['colcon_meta']
+[3.862s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_driver) by extension 'colcon_meta'
+[3.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_driver) by extensions ['ros']
+[3.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_driver) by extension 'ros'
+[3.865s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_driver) by extensions ['cmake', 'python']
+[3.865s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_driver) by extension 'cmake'
+[3.866s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_driver) by extension 'python'
+[3.867s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_driver) by extensions ['python_setup_py']
+[3.867s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_driver) by extension 'python_setup_py'
+[3.869s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_driver/serial_ros2) by extensions ['ignore', 'ignore_ament_install']
+[3.870s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_driver/serial_ros2) by extension 'ignore'
+[3.870s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_driver/serial_ros2) by extension 'ignore_ament_install'
+[3.871s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_driver/serial_ros2) by extensions ['colcon_pkg']
+[3.871s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_driver/serial_ros2) by extension 'colcon_pkg'
+[3.872s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_driver/serial_ros2) by extensions ['colcon_meta']
+[3.873s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_driver/serial_ros2) by extension 'colcon_meta'
+[3.873s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_driver/serial_ros2) by extensions ['ros']
+[3.874s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_driver/serial_ros2) by extension 'ros'
+[3.878s] DEBUG:colcon.colcon_core.package_identification:Package 'src/originbot/originbot_driver/serial_ros2' with type 'ros.ament_cmake' and name 'serial'
+[3.879s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_driver/ydlidar_ros2_driver) by extensions ['ignore', 'ignore_ament_install']
+[3.880s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_driver/ydlidar_ros2_driver) by extension 'ignore'
+[3.881s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_driver/ydlidar_ros2_driver) by extension 'ignore_ament_install'
+[3.882s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_driver/ydlidar_ros2_driver) by extensions ['colcon_pkg']
+[3.882s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_driver/ydlidar_ros2_driver) by extension 'colcon_pkg'
+[3.883s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_driver/ydlidar_ros2_driver) by extensions ['colcon_meta']
+[3.883s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_driver/ydlidar_ros2_driver) by extension 'colcon_meta'
+[3.884s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_driver/ydlidar_ros2_driver) by extensions ['ros']
+[3.884s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_driver/ydlidar_ros2_driver) by extension 'ros'
+[3.890s] DEBUG:colcon.colcon_core.package_identification:Package 'src/originbot/originbot_driver/ydlidar_ros2_driver' with type 'ros.ament_cmake' and name 'ydlidar_ros2_driver'
+[3.891s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_example) by extensions ['ignore', 'ignore_ament_install']
+[3.891s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_example) by extension 'ignore'
+[3.892s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_example) by extension 'ignore_ament_install'
+[3.893s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_example) by extensions ['colcon_pkg']
+[3.893s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_example) by extension 'colcon_pkg'
+[3.894s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_example) by extensions ['colcon_meta']
+[3.894s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_example) by extension 'colcon_meta'
+[3.895s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_example) by extensions ['ros']
+[3.895s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_example) by extension 'ros'
+[3.896s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_example) by extensions ['cmake', 'python']
+[3.896s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_example) by extension 'cmake'
+[3.897s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_example) by extension 'python'
+[3.897s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_example) by extensions ['python_setup_py']
+[3.898s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_example) by extension 'python_setup_py'
+[3.899s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_example/originbot_autonomous) by extensions ['ignore', 'ignore_ament_install']
+[3.900s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_example/originbot_autonomous) by extension 'ignore'
+[3.900s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_example/originbot_autonomous) by extension 'ignore_ament_install'
+[3.901s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_example/originbot_autonomous) by extensions ['colcon_pkg']
+[3.902s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_example/originbot_autonomous) by extension 'colcon_pkg'
+[3.902s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_example/originbot_autonomous) by extensions ['colcon_meta']
+[3.902s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_example/originbot_autonomous) by extension 'colcon_meta'
+[3.903s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_example/originbot_autonomous) by extensions ['ros']
+[3.903s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_example/originbot_autonomous) by extension 'ros'
+[3.910s] DEBUG:colcon.colcon_core.package_identification:Package 'src/originbot/originbot_example/originbot_autonomous' with type 'ros.ament_cmake' and name 'originbot_autonomous'
+[3.912s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_example/originbot_teleop) by extensions ['ignore', 'ignore_ament_install']
+[3.913s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_example/originbot_teleop) by extension 'ignore'
+[3.913s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_example/originbot_teleop) by extension 'ignore_ament_install'
+[3.914s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_example/originbot_teleop) by extensions ['colcon_pkg']
+[3.915s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_example/originbot_teleop) by extension 'colcon_pkg'
+[3.915s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_example/originbot_teleop) by extensions ['colcon_meta']
+[3.916s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_example/originbot_teleop) by extension 'colcon_meta'
+[3.916s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_example/originbot_teleop) by extensions ['ros']
+[3.916s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_example/originbot_teleop) by extension 'ros'
+[3.922s] DEBUG:colcon.colcon_core.package_identification:Package 'src/originbot/originbot_example/originbot_teleop' with type 'ros.ament_cmake' and name 'originbot_teleop'
+[3.923s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_linefollower) by extensions ['ignore', 'ignore_ament_install']
+[3.924s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_linefollower) by extension 'ignore'
+[3.924s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_linefollower) by extension 'ignore_ament_install'
+[3.925s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_linefollower) by extensions ['colcon_pkg']
+[3.925s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_linefollower) by extension 'colcon_pkg'
+[3.926s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_linefollower) by extensions ['colcon_meta']
+[3.926s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_linefollower) by extension 'colcon_meta'
+[3.927s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_linefollower) by extensions ['ros']
+[3.927s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_linefollower) by extension 'ros'
+[3.934s] DEBUG:colcon.colcon_core.package_identification:Package 'src/originbot/originbot_linefollower' with type 'ros.ament_python' and name 'originbot_linefollower'
+[3.935s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_msgs) by extensions ['ignore', 'ignore_ament_install']
+[3.936s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_msgs) by extension 'ignore'
+[3.936s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_msgs) by extension 'ignore_ament_install'
+[3.937s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_msgs) by extensions ['colcon_pkg']
+[3.938s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_msgs) by extension 'colcon_pkg'
+[3.938s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_msgs) by extensions ['colcon_meta']
+[3.939s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_msgs) by extension 'colcon_meta'
+[3.939s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_msgs) by extensions ['ros']
+[3.940s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_msgs) by extension 'ros'
+[3.944s] DEBUG:colcon.colcon_core.package_identification:Package 'src/originbot/originbot_msgs' with type 'ros.ament_cmake' and name 'originbot_msgs'
+[3.945s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_navigation) by extensions ['ignore', 'ignore_ament_install']
+[3.946s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_navigation) by extension 'ignore'
+[3.946s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_navigation) by extension 'ignore_ament_install'
+[3.947s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_navigation) by extensions ['colcon_pkg']
+[3.947s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_navigation) by extension 'colcon_pkg'
+[3.948s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_navigation) by extensions ['colcon_meta']
+[3.948s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_navigation) by extension 'colcon_meta'
+[3.949s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_navigation) by extensions ['ros']
+[3.949s] Level 1:colcon.colcon_core.package_identification:_identify(src/originbot/originbot_navigation) by extension 'ros'
+[3.954s] DEBUG:colcon.colcon_core.package_identification:Package 'src/originbot/originbot_navigation' with type 'ros.ament_cmake' and name 'originbot_navigation'
+[3.955s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[3.955s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[3.955s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[3.956s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[3.956s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[4.129s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[4.130s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[4.141s] WARNING:colcon.colcon_core.prefix_path.colcon:The path '/userdata/dev_ws/install' in the environment variable COLCON_PREFIX_PATH doesn't exist
+[4.142s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/userdata/dev_ws/install/ydlidar_ros2_driver' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[4.143s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/userdata/dev_ws/install/originbot_base' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[4.143s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/userdata/dev_ws/install/serial' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[4.144s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/userdata/dev_ws/install/play_football' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[4.145s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/userdata/dev_ws/install/parking_search' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[4.145s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/userdata/dev_ws/install/originbot_teleop' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[4.146s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/userdata/dev_ws/install/originbot_navigation' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[4.147s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/userdata/dev_ws/install/originbot_linefollower' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[4.147s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/userdata/dev_ws/install/originbot_demo' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[4.148s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/userdata/dev_ws/install/originbot_msgs' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[4.148s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/userdata/dev_ws/install/originbot_bringup' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[4.149s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/userdata/dev_ws/install/originbot_autonomous' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[4.150s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/userdata/dev_ws/install/line_follower_perception' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[4.151s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/userdata/dev_ws/install/hobot_audio' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[4.151s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/userdata/dev_ws/install/gesture_control' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[4.152s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/userdata/dev_ws/install/body_tracking' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[4.152s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/userdata/dev_ws/install/audio_control' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[4.154s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/userdata/dev_ws/install/ydlidar_ros2_driver' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[4.154s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/userdata/dev_ws/install/originbot_base' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[4.155s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/userdata/dev_ws/install/serial' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[4.156s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/userdata/dev_ws/install/play_football' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[4.156s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/userdata/dev_ws/install/parking_search' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[4.157s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/userdata/dev_ws/install/originbot_teleop' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[4.158s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/userdata/dev_ws/install/originbot_navigation' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[4.158s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/userdata/dev_ws/install/originbot_msgs' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[4.159s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/userdata/dev_ws/install/originbot_bringup' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[4.159s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/userdata/dev_ws/install/originbot_autonomous' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[4.160s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/userdata/dev_ws/install/line_follower_perception' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[4.161s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/userdata/dev_ws/install/hobot_audio' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[4.161s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/userdata/dev_ws/install/gesture_control' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[4.162s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/userdata/dev_ws/install/body_tracking' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[4.163s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/userdata/dev_ws/install/audio_control' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[4.220s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 364 installed packages in /opt/tros
+[4.248s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[4.755s] Level 5:colcon.colcon_core.verb:set package 'audio_control' build argument 'cmake_args' from command line to 'None'
+[4.756s] Level 5:colcon.colcon_core.verb:set package 'audio_control' build argument 'cmake_target' from command line to 'None'
+[4.756s] Level 5:colcon.colcon_core.verb:set package 'audio_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.756s] Level 5:colcon.colcon_core.verb:set package 'audio_control' build argument 'cmake_clean_cache' from command line to 'False'
+[4.757s] Level 5:colcon.colcon_core.verb:set package 'audio_control' build argument 'cmake_clean_first' from command line to 'False'
+[4.757s] Level 5:colcon.colcon_core.verb:set package 'audio_control' build argument 'cmake_force_configure' from command line to 'False'
+[4.757s] Level 5:colcon.colcon_core.verb:set package 'audio_control' build argument 'ament_cmake_args' from command line to 'None'
+[4.758s] Level 5:colcon.colcon_core.verb:set package 'audio_control' build argument 'catkin_cmake_args' from command line to 'None'
+[4.758s] Level 5:colcon.colcon_core.verb:set package 'audio_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.758s] DEBUG:colcon.colcon_core.verb:Building package 'audio_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/audio_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control', 'merge_install': False, 'path': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_audio/audio_control', 'symlink_install': False, 'test_result_base': None}
+[4.768s] Level 5:colcon.colcon_core.verb:set package 'body_tracking' build argument 'cmake_args' from command line to 'None'
+[4.769s] Level 5:colcon.colcon_core.verb:set package 'body_tracking' build argument 'cmake_target' from command line to 'None'
+[4.769s] Level 5:colcon.colcon_core.verb:set package 'body_tracking' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.770s] Level 5:colcon.colcon_core.verb:set package 'body_tracking' build argument 'cmake_clean_cache' from command line to 'False'
+[4.770s] Level 5:colcon.colcon_core.verb:set package 'body_tracking' build argument 'cmake_clean_first' from command line to 'False'
+[4.770s] Level 5:colcon.colcon_core.verb:set package 'body_tracking' build argument 'cmake_force_configure' from command line to 'False'
+[4.771s] Level 5:colcon.colcon_core.verb:set package 'body_tracking' build argument 'ament_cmake_args' from command line to 'None'
+[4.771s] Level 5:colcon.colcon_core.verb:set package 'body_tracking' build argument 'catkin_cmake_args' from command line to 'None'
+[4.771s] Level 5:colcon.colcon_core.verb:set package 'body_tracking' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.772s] DEBUG:colcon.colcon_core.verb:Building package 'body_tracking' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/body_tracking', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking', 'merge_install': False, 'path': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_deeplearning/body_tracking', 'symlink_install': False, 'test_result_base': None}
+[4.782s] Level 5:colcon.colcon_core.verb:set package 'gesture_control' build argument 'cmake_args' from command line to 'None'
+[4.782s] Level 5:colcon.colcon_core.verb:set package 'gesture_control' build argument 'cmake_target' from command line to 'None'
+[4.782s] Level 5:colcon.colcon_core.verb:set package 'gesture_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.783s] Level 5:colcon.colcon_core.verb:set package 'gesture_control' build argument 'cmake_clean_cache' from command line to 'False'
+[4.783s] Level 5:colcon.colcon_core.verb:set package 'gesture_control' build argument 'cmake_clean_first' from command line to 'False'
+[4.783s] Level 5:colcon.colcon_core.verb:set package 'gesture_control' build argument 'cmake_force_configure' from command line to 'False'
+[4.784s] Level 5:colcon.colcon_core.verb:set package 'gesture_control' build argument 'ament_cmake_args' from command line to 'None'
+[4.784s] Level 5:colcon.colcon_core.verb:set package 'gesture_control' build argument 'catkin_cmake_args' from command line to 'None'
+[4.784s] Level 5:colcon.colcon_core.verb:set package 'gesture_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.784s] DEBUG:colcon.colcon_core.verb:Building package 'gesture_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/gesture_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control', 'merge_install': False, 'path': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_deeplearning/gesture_control', 'symlink_install': False, 'test_result_base': None}
+[4.794s] Level 5:colcon.colcon_core.verb:set package 'hobot_audio' build argument 'cmake_args' from command line to 'None'
+[4.795s] Level 5:colcon.colcon_core.verb:set package 'hobot_audio' build argument 'cmake_target' from command line to 'None'
+[4.795s] Level 5:colcon.colcon_core.verb:set package 'hobot_audio' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.795s] Level 5:colcon.colcon_core.verb:set package 'hobot_audio' build argument 'cmake_clean_cache' from command line to 'False'
+[4.796s] Level 5:colcon.colcon_core.verb:set package 'hobot_audio' build argument 'cmake_clean_first' from command line to 'False'
+[4.796s] Level 5:colcon.colcon_core.verb:set package 'hobot_audio' build argument 'cmake_force_configure' from command line to 'False'
+[4.796s] Level 5:colcon.colcon_core.verb:set package 'hobot_audio' build argument 'ament_cmake_args' from command line to 'None'
+[4.796s] Level 5:colcon.colcon_core.verb:set package 'hobot_audio' build argument 'catkin_cmake_args' from command line to 'None'
+[4.797s] Level 5:colcon.colcon_core.verb:set package 'hobot_audio' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.797s] DEBUG:colcon.colcon_core.verb:Building package 'hobot_audio' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/hobot_audio', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio', 'merge_install': False, 'path': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_audio/hobot_audio', 'symlink_install': False, 'test_result_base': None}
+[4.807s] Level 5:colcon.colcon_core.verb:set package 'line_follower_perception' build argument 'cmake_args' from command line to 'None'
+[4.808s] Level 5:colcon.colcon_core.verb:set package 'line_follower_perception' build argument 'cmake_target' from command line to 'None'
+[4.808s] Level 5:colcon.colcon_core.verb:set package 'line_follower_perception' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.808s] Level 5:colcon.colcon_core.verb:set package 'line_follower_perception' build argument 'cmake_clean_cache' from command line to 'False'
+[4.808s] Level 5:colcon.colcon_core.verb:set package 'line_follower_perception' build argument 'cmake_clean_first' from command line to 'False'
+[4.809s] Level 5:colcon.colcon_core.verb:set package 'line_follower_perception' build argument 'cmake_force_configure' from command line to 'False'
+[4.809s] Level 5:colcon.colcon_core.verb:set package 'line_follower_perception' build argument 'ament_cmake_args' from command line to 'None'
+[4.809s] Level 5:colcon.colcon_core.verb:set package 'line_follower_perception' build argument 'catkin_cmake_args' from command line to 'None'
+[4.810s] Level 5:colcon.colcon_core.verb:set package 'line_follower_perception' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.810s] DEBUG:colcon.colcon_core.verb:Building package 'line_follower_perception' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/line_follower_perception', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/line_follower_perception', 'merge_install': False, 'path': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_deeplearning/line_follower_perception', 'symlink_install': False, 'test_result_base': None}
+[4.820s] Level 5:colcon.colcon_core.verb:set package 'originbot_autonomous' build argument 'cmake_args' from command line to 'None'
+[4.820s] Level 5:colcon.colcon_core.verb:set package 'originbot_autonomous' build argument 'cmake_target' from command line to 'None'
+[4.821s] Level 5:colcon.colcon_core.verb:set package 'originbot_autonomous' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.821s] Level 5:colcon.colcon_core.verb:set package 'originbot_autonomous' build argument 'cmake_clean_cache' from command line to 'False'
+[4.821s] Level 5:colcon.colcon_core.verb:set package 'originbot_autonomous' build argument 'cmake_clean_first' from command line to 'False'
+[4.822s] Level 5:colcon.colcon_core.verb:set package 'originbot_autonomous' build argument 'cmake_force_configure' from command line to 'False'
+[4.822s] Level 5:colcon.colcon_core.verb:set package 'originbot_autonomous' build argument 'ament_cmake_args' from command line to 'None'
+[4.822s] Level 5:colcon.colcon_core.verb:set package 'originbot_autonomous' build argument 'catkin_cmake_args' from command line to 'None'
+[4.822s] Level 5:colcon.colcon_core.verb:set package 'originbot_autonomous' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.823s] DEBUG:colcon.colcon_core.verb:Building package 'originbot_autonomous' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_autonomous', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_autonomous', 'merge_install': False, 'path': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_example/originbot_autonomous', 'symlink_install': False, 'test_result_base': None}
+[4.833s] Level 5:colcon.colcon_core.verb:set package 'originbot_bringup' build argument 'cmake_args' from command line to 'None'
+[4.833s] Level 5:colcon.colcon_core.verb:set package 'originbot_bringup' build argument 'cmake_target' from command line to 'None'
+[4.834s] Level 5:colcon.colcon_core.verb:set package 'originbot_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.834s] Level 5:colcon.colcon_core.verb:set package 'originbot_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[4.834s] Level 5:colcon.colcon_core.verb:set package 'originbot_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[4.834s] Level 5:colcon.colcon_core.verb:set package 'originbot_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[4.835s] Level 5:colcon.colcon_core.verb:set package 'originbot_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[4.835s] Level 5:colcon.colcon_core.verb:set package 'originbot_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[4.835s] Level 5:colcon.colcon_core.verb:set package 'originbot_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.836s] DEBUG:colcon.colcon_core.verb:Building package 'originbot_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup', 'merge_install': False, 'path': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_bringup', 'symlink_install': False, 'test_result_base': None}
+[4.846s] Level 5:colcon.colcon_core.verb:set package 'originbot_msgs' build argument 'cmake_args' from command line to 'None'
+[4.846s] Level 5:colcon.colcon_core.verb:set package 'originbot_msgs' build argument 'cmake_target' from command line to 'None'
+[4.846s] Level 5:colcon.colcon_core.verb:set package 'originbot_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.847s] Level 5:colcon.colcon_core.verb:set package 'originbot_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[4.847s] Level 5:colcon.colcon_core.verb:set package 'originbot_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[4.847s] Level 5:colcon.colcon_core.verb:set package 'originbot_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[4.848s] Level 5:colcon.colcon_core.verb:set package 'originbot_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[4.848s] Level 5:colcon.colcon_core.verb:set package 'originbot_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[4.848s] Level 5:colcon.colcon_core.verb:set package 'originbot_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.848s] DEBUG:colcon.colcon_core.verb:Building package 'originbot_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs', 'merge_install': False, 'path': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_msgs', 'symlink_install': False, 'test_result_base': None}
+[4.858s] Level 5:colcon.colcon_core.verb:set package 'originbot_navigation' build argument 'cmake_args' from command line to 'None'
+[4.859s] Level 5:colcon.colcon_core.verb:set package 'originbot_navigation' build argument 'cmake_target' from command line to 'None'
+[4.859s] Level 5:colcon.colcon_core.verb:set package 'originbot_navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.859s] Level 5:colcon.colcon_core.verb:set package 'originbot_navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[4.860s] Level 5:colcon.colcon_core.verb:set package 'originbot_navigation' build argument 'cmake_clean_first' from command line to 'False'
+[4.860s] Level 5:colcon.colcon_core.verb:set package 'originbot_navigation' build argument 'cmake_force_configure' from command line to 'False'
+[4.860s] Level 5:colcon.colcon_core.verb:set package 'originbot_navigation' build argument 'ament_cmake_args' from command line to 'None'
+[4.861s] Level 5:colcon.colcon_core.verb:set package 'originbot_navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[4.861s] Level 5:colcon.colcon_core.verb:set package 'originbot_navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.861s] DEBUG:colcon.colcon_core.verb:Building package 'originbot_navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation', 'merge_install': False, 'path': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_navigation', 'symlink_install': False, 'test_result_base': None}
+[4.871s] Level 5:colcon.colcon_core.verb:set package 'originbot_teleop' build argument 'cmake_args' from command line to 'None'
+[4.871s] Level 5:colcon.colcon_core.verb:set package 'originbot_teleop' build argument 'cmake_target' from command line to 'None'
+[4.872s] Level 5:colcon.colcon_core.verb:set package 'originbot_teleop' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.872s] Level 5:colcon.colcon_core.verb:set package 'originbot_teleop' build argument 'cmake_clean_cache' from command line to 'False'
+[4.872s] Level 5:colcon.colcon_core.verb:set package 'originbot_teleop' build argument 'cmake_clean_first' from command line to 'False'
+[4.873s] Level 5:colcon.colcon_core.verb:set package 'originbot_teleop' build argument 'cmake_force_configure' from command line to 'False'
+[4.873s] Level 5:colcon.colcon_core.verb:set package 'originbot_teleop' build argument 'ament_cmake_args' from command line to 'None'
+[4.873s] Level 5:colcon.colcon_core.verb:set package 'originbot_teleop' build argument 'catkin_cmake_args' from command line to 'None'
+[4.874s] Level 5:colcon.colcon_core.verb:set package 'originbot_teleop' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.874s] DEBUG:colcon.colcon_core.verb:Building package 'originbot_teleop' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_teleop', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop', 'merge_install': False, 'path': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_example/originbot_teleop', 'symlink_install': False, 'test_result_base': None}
+[4.884s] Level 5:colcon.colcon_core.verb:set package 'parking_search' build argument 'cmake_args' from command line to 'None'
+[4.884s] Level 5:colcon.colcon_core.verb:set package 'parking_search' build argument 'cmake_target' from command line to 'None'
+[4.885s] Level 5:colcon.colcon_core.verb:set package 'parking_search' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.885s] Level 5:colcon.colcon_core.verb:set package 'parking_search' build argument 'cmake_clean_cache' from command line to 'False'
+[4.885s] Level 5:colcon.colcon_core.verb:set package 'parking_search' build argument 'cmake_clean_first' from command line to 'False'
+[4.886s] Level 5:colcon.colcon_core.verb:set package 'parking_search' build argument 'cmake_force_configure' from command line to 'False'
+[4.886s] Level 5:colcon.colcon_core.verb:set package 'parking_search' build argument 'ament_cmake_args' from command line to 'None'
+[4.886s] Level 5:colcon.colcon_core.verb:set package 'parking_search' build argument 'catkin_cmake_args' from command line to 'None'
+[4.887s] Level 5:colcon.colcon_core.verb:set package 'parking_search' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.887s] DEBUG:colcon.colcon_core.verb:Building package 'parking_search' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/parking_search', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/parking_search', 'merge_install': False, 'path': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_deeplearning/parking_search', 'symlink_install': False, 'test_result_base': None}
+[4.897s] Level 5:colcon.colcon_core.verb:set package 'play_football' build argument 'cmake_args' from command line to 'None'
+[4.897s] Level 5:colcon.colcon_core.verb:set package 'play_football' build argument 'cmake_target' from command line to 'None'
+[4.898s] Level 5:colcon.colcon_core.verb:set package 'play_football' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.898s] Level 5:colcon.colcon_core.verb:set package 'play_football' build argument 'cmake_clean_cache' from command line to 'False'
+[4.898s] Level 5:colcon.colcon_core.verb:set package 'play_football' build argument 'cmake_clean_first' from command line to 'False'
+[4.898s] Level 5:colcon.colcon_core.verb:set package 'play_football' build argument 'cmake_force_configure' from command line to 'False'
+[4.899s] Level 5:colcon.colcon_core.verb:set package 'play_football' build argument 'ament_cmake_args' from command line to 'None'
+[4.899s] Level 5:colcon.colcon_core.verb:set package 'play_football' build argument 'catkin_cmake_args' from command line to 'None'
+[4.899s] Level 5:colcon.colcon_core.verb:set package 'play_football' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.900s] DEBUG:colcon.colcon_core.verb:Building package 'play_football' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/play_football', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/play_football', 'merge_install': False, 'path': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_deeplearning/play_football', 'symlink_install': False, 'test_result_base': None}
+[4.909s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_args' from command line to 'None'
+[4.910s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_target' from command line to 'None'
+[4.910s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.911s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_clean_cache' from command line to 'False'
+[4.911s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_clean_first' from command line to 'False'
+[4.911s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_force_configure' from command line to 'False'
+[4.912s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'ament_cmake_args' from command line to 'None'
+[4.912s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'catkin_cmake_args' from command line to 'None'
+[4.913s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.913s] DEBUG:colcon.colcon_core.verb:Building package 'serial' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/serial', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/serial', 'merge_install': False, 'path': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_driver/serial_ros2', 'symlink_install': False, 'test_result_base': None}
+[4.925s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_args' from command line to 'None'
+[4.926s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_target' from command line to 'None'
+[4.926s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.926s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[4.927s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_clean_first' from command line to 'False'
+[4.927s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_force_configure' from command line to 'False'
+[4.927s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'ament_cmake_args' from command line to 'None'
+[4.927s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[4.928s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.928s] DEBUG:colcon.colcon_core.verb:Building package 'ydlidar_ros2_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/ydlidar_ros2_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/ydlidar_ros2_driver', 'merge_install': False, 'path': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_driver/ydlidar_ros2_driver', 'symlink_install': False, 'test_result_base': None}
+[4.938s] Level 5:colcon.colcon_core.verb:set package 'originbot_base' build argument 'cmake_args' from command line to 'None'
+[4.939s] Level 5:colcon.colcon_core.verb:set package 'originbot_base' build argument 'cmake_target' from command line to 'None'
+[4.939s] Level 5:colcon.colcon_core.verb:set package 'originbot_base' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.939s] Level 5:colcon.colcon_core.verb:set package 'originbot_base' build argument 'cmake_clean_cache' from command line to 'False'
+[4.939s] Level 5:colcon.colcon_core.verb:set package 'originbot_base' build argument 'cmake_clean_first' from command line to 'False'
+[4.940s] Level 5:colcon.colcon_core.verb:set package 'originbot_base' build argument 'cmake_force_configure' from command line to 'False'
+[4.940s] Level 5:colcon.colcon_core.verb:set package 'originbot_base' build argument 'ament_cmake_args' from command line to 'None'
+[4.940s] Level 5:colcon.colcon_core.verb:set package 'originbot_base' build argument 'catkin_cmake_args' from command line to 'None'
+[4.941s] Level 5:colcon.colcon_core.verb:set package 'originbot_base' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.941s] DEBUG:colcon.colcon_core.verb:Building package 'originbot_base' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_base', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_base', 'merge_install': False, 'path': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_base', 'symlink_install': False, 'test_result_base': None}
+[4.951s] Level 5:colcon.colcon_core.verb:set package 'originbot_demo' build argument 'cmake_args' from command line to 'None'
+[4.951s] Level 5:colcon.colcon_core.verb:set package 'originbot_demo' build argument 'cmake_target' from command line to 'None'
+[4.952s] Level 5:colcon.colcon_core.verb:set package 'originbot_demo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.952s] Level 5:colcon.colcon_core.verb:set package 'originbot_demo' build argument 'cmake_clean_cache' from command line to 'False'
+[4.952s] Level 5:colcon.colcon_core.verb:set package 'originbot_demo' build argument 'cmake_clean_first' from command line to 'False'
+[4.952s] Level 5:colcon.colcon_core.verb:set package 'originbot_demo' build argument 'cmake_force_configure' from command line to 'False'
+[4.953s] Level 5:colcon.colcon_core.verb:set package 'originbot_demo' build argument 'ament_cmake_args' from command line to 'None'
+[4.953s] Level 5:colcon.colcon_core.verb:set package 'originbot_demo' build argument 'catkin_cmake_args' from command line to 'None'
+[4.953s] Level 5:colcon.colcon_core.verb:set package 'originbot_demo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.954s] DEBUG:colcon.colcon_core.verb:Building package 'originbot_demo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_demo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_demo', 'merge_install': False, 'path': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_demo', 'symlink_install': False, 'test_result_base': None}
+[4.964s] Level 5:colcon.colcon_core.verb:set package 'originbot_linefollower' build argument 'cmake_args' from command line to 'None'
+[4.964s] Level 5:colcon.colcon_core.verb:set package 'originbot_linefollower' build argument 'cmake_target' from command line to 'None'
+[4.964s] Level 5:colcon.colcon_core.verb:set package 'originbot_linefollower' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.965s] Level 5:colcon.colcon_core.verb:set package 'originbot_linefollower' build argument 'cmake_clean_cache' from command line to 'False'
+[4.965s] Level 5:colcon.colcon_core.verb:set package 'originbot_linefollower' build argument 'cmake_clean_first' from command line to 'False'
+[4.966s] Level 5:colcon.colcon_core.verb:set package 'originbot_linefollower' build argument 'cmake_force_configure' from command line to 'False'
+[4.966s] Level 5:colcon.colcon_core.verb:set package 'originbot_linefollower' build argument 'ament_cmake_args' from command line to 'None'
+[4.966s] Level 5:colcon.colcon_core.verb:set package 'originbot_linefollower' build argument 'catkin_cmake_args' from command line to 'None'
+[4.966s] Level 5:colcon.colcon_core.verb:set package 'originbot_linefollower' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.967s] DEBUG:colcon.colcon_core.verb:Building package 'originbot_linefollower' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_linefollower', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_linefollower', 'merge_install': False, 'path': '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_linefollower', 'symlink_install': False, 'test_result_base': None}
+[4.973s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[5.007s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[5.010s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_msgs' with build type 'ament_cmake'
+[5.011s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_msgs'
+[5.059s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[5.060s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.061s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.136s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_driver/serial_ros2' with build type 'ament_cmake'
+[5.138s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_driver/serial_ros2'
+[5.158s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.158s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.237s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_audio/audio_control' with build type 'ament_cmake'
+[5.239s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_audio/audio_control'
+[5.260s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.261s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.336s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_deeplearning/body_tracking' with build type 'ament_cmake'
+[5.339s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_deeplearning/body_tracking'
+[5.358s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.359s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.471s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake /root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_msgs -DCMAKE_INSTALL_PREFIX=/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs
+[5.504s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake /root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_driver/serial_ros2 -DCMAKE_INSTALL_PREFIX=/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/serial
+[5.533s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/audio_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake /root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_audio/audio_control -DCMAKE_INSTALL_PREFIX=/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control
+[5.599s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/body_tracking': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake /root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_deeplearning/body_tracking -DCMAKE_INSTALL_PREFIX=/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking
+[18.219s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake /root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_driver/serial_ros2 -DCMAKE_INSTALL_PREFIX=/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/serial
+[18.234s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --build /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/serial -- -j4 -l4
+[25.828s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake /root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_msgs -DCMAKE_INSTALL_PREFIX=/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs
+[25.838s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --build /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_msgs -- -j4 -l4
+[31.231s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/audio_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake /root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_audio/audio_control -DCMAKE_INSTALL_PREFIX=/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control
+[31.266s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/audio_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --build /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/audio_control -- -j4 -l4
+[35.969s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/body_tracking' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake /root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_deeplearning/body_tracking -DCMAKE_INSTALL_PREFIX=/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking
+[35.974s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/body_tracking': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --build /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/body_tracking -- -j4 -l4
+[43.603s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --build /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/serial -- -j4 -l4
+[44.353s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --install /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/serial
+[44.588s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial)
+[44.613s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --install /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/serial
+[44.668s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/serial' for CMake module files
+[44.672s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/serial' for CMake config files
+[44.682s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'cmake_prefix_path')
+[44.730s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/serial/share/serial/hook/cmake_prefix_path.ps1'
+[44.740s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/serial/share/serial/hook/cmake_prefix_path.dsv'
+[44.749s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/serial/share/serial/hook/cmake_prefix_path.sh'
+[44.757s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/serial/lib'
+[44.759s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/serial/bin'
+[44.760s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/serial/lib/pkgconfig/serial.pc'
+[44.762s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/serial/lib/python3.8/site-packages'
+[44.764s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/serial/bin'
+[44.782s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/serial/share/serial/package.ps1'
+[44.788s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/serial/share/serial/package.dsv'
+[44.794s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/serial/share/serial/package.sh'
+[44.804s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/serial/share/serial/package.bash'
+[44.814s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/serial/share/serial/package.zsh'
+[44.824s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/serial/share/colcon-core/packages/serial)
+[45.376s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial)
+[45.445s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/serial' for CMake module files
+[45.450s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/serial' for CMake config files
+[45.453s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'cmake_prefix_path')
+[45.488s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/serial/share/serial/hook/cmake_prefix_path.ps1'
+[45.497s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/serial/share/serial/hook/cmake_prefix_path.dsv'
+[45.508s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/serial/share/serial/hook/cmake_prefix_path.sh'
+[45.519s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/serial/lib'
+[45.520s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/serial/bin'
+[45.521s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/serial/lib/pkgconfig/serial.pc'
+[45.527s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/serial/lib/python3.8/site-packages'
+[45.529s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/serial/bin'
+[45.593s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/serial/share/serial/package.ps1'
+[45.602s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/serial/share/serial/package.dsv'
+[45.612s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/serial/share/serial/package.sh'
+[45.620s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/serial/share/serial/package.bash'
+[45.629s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/serial/share/serial/package.zsh'
+[45.641s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/serial/share/colcon-core/packages/serial)
+[45.649s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_deeplearning/gesture_control' with build type 'ament_cmake'
+[45.651s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_deeplearning/gesture_control'
+[45.691s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[45.691s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[45.898s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/gesture_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake /root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_deeplearning/gesture_control -DCMAKE_INSTALL_PREFIX=/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control
+[74.365s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/gesture_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake /root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_deeplearning/gesture_control -DCMAKE_INSTALL_PREFIX=/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control
+[74.377s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/gesture_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --build /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/gesture_control -- -j4 -l4
+[238.854s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --build /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_msgs -- -j4 -l4
+[240.508s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --install /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_msgs
+[242.162s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(originbot_msgs)
+[242.202s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --install /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_msgs
+[242.213s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs' for CMake module files
+[242.226s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs' for CMake config files
+[242.229s] Level 1:colcon.colcon_core.shell:create_environment_hook('originbot_msgs', 'cmake_prefix_path')
+[242.268s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs/share/originbot_msgs/hook/cmake_prefix_path.ps1'
+[242.281s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs/share/originbot_msgs/hook/cmake_prefix_path.dsv'
+[242.290s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs/share/originbot_msgs/hook/cmake_prefix_path.sh'
+[242.301s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs/lib'
+[242.307s] Level 1:colcon.colcon_core.shell:create_environment_hook('originbot_msgs', 'ld_library_path_lib')
+[242.343s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs/share/originbot_msgs/hook/ld_library_path_lib.ps1'
+[242.351s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs/share/originbot_msgs/hook/ld_library_path_lib.dsv'
+[242.358s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs/share/originbot_msgs/hook/ld_library_path_lib.sh'
+[242.361s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs/bin'
+[242.362s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs/lib/pkgconfig/originbot_msgs.pc'
+[242.365s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs/lib/python3.8/site-packages'
+[242.374s] Level 1:colcon.colcon_core.shell:create_environment_hook('originbot_msgs', 'pythonpath')
+[242.408s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs/share/originbot_msgs/hook/pythonpath.ps1'
+[242.417s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs/share/originbot_msgs/hook/pythonpath.dsv'
+[242.424s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs/share/originbot_msgs/hook/pythonpath.sh'
+[242.433s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs/bin'
+[242.472s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs/share/originbot_msgs/package.ps1'
+[242.486s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs/share/originbot_msgs/package.dsv'
+[242.498s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs/share/originbot_msgs/package.sh'
+[242.504s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs/share/originbot_msgs/package.bash'
+[242.527s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs/share/originbot_msgs/package.zsh'
+[242.532s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs/share/colcon-core/packages/originbot_msgs)
+[244.690s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(originbot_msgs)
+[244.742s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs' for CMake module files
+[244.759s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs' for CMake config files
+[244.765s] Level 1:colcon.colcon_core.shell:create_environment_hook('originbot_msgs', 'cmake_prefix_path')
+[244.807s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs/share/originbot_msgs/hook/cmake_prefix_path.ps1'
+[244.815s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs/share/originbot_msgs/hook/cmake_prefix_path.dsv'
+[244.827s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs/share/originbot_msgs/hook/cmake_prefix_path.sh'
+[244.839s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs/lib'
+[244.840s] Level 1:colcon.colcon_core.shell:create_environment_hook('originbot_msgs', 'ld_library_path_lib')
+[244.873s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs/share/originbot_msgs/hook/ld_library_path_lib.ps1'
+[244.882s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs/share/originbot_msgs/hook/ld_library_path_lib.dsv'
+[244.886s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs/share/originbot_msgs/hook/ld_library_path_lib.sh'
+[244.894s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs/bin'
+[244.894s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs/lib/pkgconfig/originbot_msgs.pc'
+[244.897s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs/lib/python3.8/site-packages'
+[244.902s] Level 1:colcon.colcon_core.shell:create_environment_hook('originbot_msgs', 'pythonpath')
+[244.947s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs/share/originbot_msgs/hook/pythonpath.ps1'
+[244.960s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs/share/originbot_msgs/hook/pythonpath.dsv'
+[244.969s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs/share/originbot_msgs/hook/pythonpath.sh'
+[244.975s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs/bin'
+[245.011s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs/share/originbot_msgs/package.ps1'
+[245.026s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs/share/originbot_msgs/package.dsv'
+[245.041s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs/share/originbot_msgs/package.sh'
+[245.053s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs/share/originbot_msgs/package.bash'
+[245.057s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs/share/originbot_msgs/package.zsh'
+[245.068s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs/share/colcon-core/packages/originbot_msgs)
+[245.075s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_audio/hobot_audio' with build type 'ament_cmake'
+[245.079s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_audio/hobot_audio'
+[245.108s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[245.114s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[245.315s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/hobot_audio': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake /root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_audio/hobot_audio -DCMAKE_INSTALL_PREFIX=/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio
+[246.088s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/audio_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --build /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/audio_control -- -j4 -l4
+[246.436s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/audio_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --install /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/audio_control
+[246.743s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(audio_control)
+[246.760s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/audio_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --install /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/audio_control
+[246.811s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control' for CMake module files
+[246.816s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control' for CMake config files
+[246.818s] Level 1:colcon.colcon_core.shell:create_environment_hook('audio_control', 'cmake_prefix_path')
+[246.887s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/audio_control/hook/cmake_prefix_path.ps1'
+[246.895s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/audio_control/hook/cmake_prefix_path.dsv'
+[246.911s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/audio_control/hook/cmake_prefix_path.sh'
+[246.919s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/lib'
+[246.920s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/bin'
+[246.925s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/lib/pkgconfig/audio_control.pc'
+[246.927s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/lib/python3.8/site-packages'
+[246.933s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/bin'
+[246.969s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/audio_control/package.ps1'
+[246.982s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/audio_control/package.dsv'
+[246.995s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/audio_control/package.sh'
+[247.001s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/audio_control/package.bash'
+[247.006s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/audio_control/package.zsh'
+[247.019s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/colcon-core/packages/audio_control)
+[247.658s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(audio_control)
+[247.704s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control' for CMake module files
+[247.717s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control' for CMake config files
+[247.719s] Level 1:colcon.colcon_core.shell:create_environment_hook('audio_control', 'cmake_prefix_path')
+[247.760s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/audio_control/hook/cmake_prefix_path.ps1'
+[247.772s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/audio_control/hook/cmake_prefix_path.dsv'
+[247.776s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/audio_control/hook/cmake_prefix_path.sh'
+[247.782s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/lib'
+[247.783s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/bin'
+[247.784s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/lib/pkgconfig/audio_control.pc'
+[247.786s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/lib/python3.8/site-packages'
+[247.802s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/bin'
+[247.836s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/audio_control/package.ps1'
+[247.853s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/audio_control/package.dsv'
+[247.871s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/audio_control/package.sh'
+[247.881s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/audio_control/package.bash'
+[247.886s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/audio_control/package.zsh'
+[247.896s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/colcon-core/packages/audio_control)
+[247.900s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_deeplearning/line_follower_perception' with build type 'ament_cmake'
+[247.902s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_deeplearning/line_follower_perception'
+[247.956s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[247.957s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[248.256s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/line_follower_perception': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake /root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_deeplearning/line_follower_perception -DCMAKE_INSTALL_PREFIX=/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/line_follower_perception
+[272.427s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/hobot_audio' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake /root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_audio/hobot_audio -DCMAKE_INSTALL_PREFIX=/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio
+[272.436s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/hobot_audio': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --build /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/hobot_audio -- -j4 -l4
+[272.826s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/line_follower_perception' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake /root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_deeplearning/line_follower_perception -DCMAKE_INSTALL_PREFIX=/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/line_follower_perception
+[272.849s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/line_follower_perception': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --build /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/line_follower_perception -- -j4 -l4
+[303.604s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/body_tracking' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --build /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/body_tracking -- -j4 -l4
+[304.130s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/body_tracking': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --install /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/body_tracking
+[304.446s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(body_tracking)
+[304.482s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/body_tracking' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --install /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/body_tracking
+[304.503s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking' for CMake module files
+[304.513s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking' for CMake config files
+[304.515s] Level 1:colcon.colcon_core.shell:create_environment_hook('body_tracking', 'cmake_prefix_path')
+[304.544s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/hook/cmake_prefix_path.ps1'
+[304.552s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/hook/cmake_prefix_path.dsv'
+[304.559s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/hook/cmake_prefix_path.sh'
+[304.567s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/lib'
+[304.568s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/bin'
+[304.569s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/lib/pkgconfig/body_tracking.pc'
+[304.575s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/lib/python3.8/site-packages'
+[304.577s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/bin'
+[304.618s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/package.ps1'
+[304.622s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/package.dsv'
+[304.630s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/package.sh'
+[304.634s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/package.bash'
+[304.651s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/package.zsh'
+[304.657s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/colcon-core/packages/body_tracking)
+[305.281s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(body_tracking)
+[305.330s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking' for CMake module files
+[305.339s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking' for CMake config files
+[305.345s] Level 1:colcon.colcon_core.shell:create_environment_hook('body_tracking', 'cmake_prefix_path')
+[305.373s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/hook/cmake_prefix_path.ps1'
+[305.390s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/hook/cmake_prefix_path.dsv'
+[305.402s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/hook/cmake_prefix_path.sh'
+[305.407s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/lib'
+[305.408s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/bin'
+[305.409s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/lib/pkgconfig/body_tracking.pc'
+[305.412s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/lib/python3.8/site-packages'
+[305.414s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/bin'
+[305.451s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/package.ps1'
+[305.461s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/package.dsv'
+[305.471s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/package.sh'
+[305.482s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/package.bash'
+[305.492s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/package.zsh'
+[305.505s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/colcon-core/packages/body_tracking)
+[305.517s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_example/originbot_autonomous' with build type 'ament_cmake'
+[305.520s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_example/originbot_autonomous'
+[305.550s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[305.550s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[305.768s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_autonomous': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake /root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_example/originbot_autonomous -DCMAKE_INSTALL_PREFIX=/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_autonomous
+[306.624s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/gesture_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --build /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/gesture_control -- -j4 -l4
+[307.278s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/gesture_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --install /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/gesture_control
+[307.549s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gesture_control)
+[307.580s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/gesture_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --install /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/gesture_control
+[307.613s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control' for CMake module files
+[307.624s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control' for CMake config files
+[307.627s] Level 1:colcon.colcon_core.shell:create_environment_hook('gesture_control', 'cmake_prefix_path')
+[307.679s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/share/gesture_control/hook/cmake_prefix_path.ps1'
+[307.698s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/share/gesture_control/hook/cmake_prefix_path.dsv'
+[307.714s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/share/gesture_control/hook/cmake_prefix_path.sh'
+[307.723s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/lib'
+[307.724s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/bin'
+[307.741s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/lib/pkgconfig/gesture_control.pc'
+[307.744s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/lib/python3.8/site-packages'
+[307.750s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/bin'
+[307.802s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/share/gesture_control/package.ps1'
+[307.811s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/share/gesture_control/package.dsv'
+[307.818s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/share/gesture_control/package.sh'
+[307.826s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/share/gesture_control/package.bash'
+[307.834s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/share/gesture_control/package.zsh'
+[307.849s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/share/colcon-core/packages/gesture_control)
+[308.393s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gesture_control)
+[308.449s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control' for CMake module files
+[308.462s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control' for CMake config files
+[308.464s] Level 1:colcon.colcon_core.shell:create_environment_hook('gesture_control', 'cmake_prefix_path')
+[308.490s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/share/gesture_control/hook/cmake_prefix_path.ps1'
+[308.494s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/share/gesture_control/hook/cmake_prefix_path.dsv'
+[308.497s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/share/gesture_control/hook/cmake_prefix_path.sh'
+[308.501s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/lib'
+[308.502s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/bin'
+[308.503s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/lib/pkgconfig/gesture_control.pc'
+[308.505s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/lib/python3.8/site-packages'
+[308.509s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/bin'
+[308.531s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/share/gesture_control/package.ps1'
+[308.537s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/share/gesture_control/package.dsv'
+[308.542s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/share/gesture_control/package.sh'
+[308.546s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/share/gesture_control/package.bash'
+[308.551s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/share/gesture_control/package.zsh'
+[308.555s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/share/colcon-core/packages/gesture_control)
+[308.568s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_bringup' with build type 'ament_cmake'
+[308.574s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_bringup'
+[308.593s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[308.594s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[308.763s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake /root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_bringup -DCMAKE_INSTALL_PREFIX=/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup
+[331.456s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_autonomous' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake /root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_example/originbot_autonomous -DCMAKE_INSTALL_PREFIX=/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_autonomous
+[331.464s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_autonomous': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --build /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_autonomous -- -j4 -l4
+[343.404s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake /root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_bringup -DCMAKE_INSTALL_PREFIX=/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup
+[343.449s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --build /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_bringup -- -j4 -l4
+[344.022s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --build /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_bringup -- -j4 -l4
+[344.307s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --install /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_bringup
+[344.518s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(originbot_bringup)
+[344.566s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --install /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_bringup
+[344.607s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup' for CMake module files
+[344.619s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup' for CMake config files
+[344.621s] Level 1:colcon.colcon_core.shell:create_environment_hook('originbot_bringup', 'cmake_prefix_path')
+[344.675s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/share/originbot_bringup/hook/cmake_prefix_path.ps1'
+[344.685s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/share/originbot_bringup/hook/cmake_prefix_path.dsv'
+[344.697s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/share/originbot_bringup/hook/cmake_prefix_path.sh'
+[344.706s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/bin'
+[344.707s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/lib/pkgconfig/originbot_bringup.pc'
+[344.714s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/lib/python3.8/site-packages'
+[344.716s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/bin'
+[344.760s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/share/originbot_bringup/package.ps1'
+[344.764s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/share/originbot_bringup/package.dsv'
+[344.786s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/share/originbot_bringup/package.sh'
+[344.791s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/share/originbot_bringup/package.bash'
+[344.801s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/share/originbot_bringup/package.zsh'
+[344.808s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/share/colcon-core/packages/originbot_bringup)
+[345.275s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(originbot_bringup)
+[345.333s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup' for CMake module files
+[345.346s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup' for CMake config files
+[345.347s] Level 1:colcon.colcon_core.shell:create_environment_hook('originbot_bringup', 'cmake_prefix_path')
+[345.402s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/share/originbot_bringup/hook/cmake_prefix_path.ps1'
+[345.423s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/share/originbot_bringup/hook/cmake_prefix_path.dsv'
+[345.439s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/share/originbot_bringup/hook/cmake_prefix_path.sh'
+[345.459s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/bin'
+[345.460s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/lib/pkgconfig/originbot_bringup.pc'
+[345.474s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/lib/python3.8/site-packages'
+[345.476s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/bin'
+[345.528s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/share/originbot_bringup/package.ps1'
+[345.539s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/share/originbot_bringup/package.dsv'
+[345.553s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/share/originbot_bringup/package.sh'
+[345.558s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/share/originbot_bringup/package.bash'
+[345.570s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/share/originbot_bringup/package.zsh'
+[345.576s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_bringup/share/colcon-core/packages/originbot_bringup)
+[345.589s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_navigation' with build type 'ament_cmake'
+[345.591s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_navigation'
+[345.636s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[345.637s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[345.874s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake /root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_navigation -DCMAKE_INSTALL_PREFIX=/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation
+[360.938s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake /root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_navigation -DCMAKE_INSTALL_PREFIX=/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation
+[360.965s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --build /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_navigation -- -j4 -l4
+[361.514s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --build /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_navigation -- -j4 -l4
+[361.821s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --install /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_navigation
+[362.082s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(originbot_navigation)
+[362.143s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation' for CMake module files
+[362.151s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation' for CMake config files
+[362.156s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --install /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_navigation
+[362.159s] Level 1:colcon.colcon_core.shell:create_environment_hook('originbot_navigation', 'cmake_prefix_path')
+[362.203s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/originbot_navigation/hook/cmake_prefix_path.ps1'
+[362.213s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/originbot_navigation/hook/cmake_prefix_path.dsv'
+[362.217s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/originbot_navigation/hook/cmake_prefix_path.sh'
+[362.230s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/bin'
+[362.233s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/lib/pkgconfig/originbot_navigation.pc'
+[362.236s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/lib/python3.8/site-packages'
+[362.246s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/bin'
+[362.281s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/originbot_navigation/package.ps1'
+[362.290s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/originbot_navigation/package.dsv'
+[362.298s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/originbot_navigation/package.sh'
+[362.307s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/originbot_navigation/package.bash'
+[362.310s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/originbot_navigation/package.zsh'
+[362.313s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/colcon-core/packages/originbot_navigation)
+[362.853s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(originbot_navigation)
+[362.936s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation' for CMake module files
+[362.945s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation' for CMake config files
+[362.951s] Level 1:colcon.colcon_core.shell:create_environment_hook('originbot_navigation', 'cmake_prefix_path')
+[362.988s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/originbot_navigation/hook/cmake_prefix_path.ps1'
+[363.004s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/originbot_navigation/hook/cmake_prefix_path.dsv'
+[363.007s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/originbot_navigation/hook/cmake_prefix_path.sh'
+[363.024s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/bin'
+[363.025s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/lib/pkgconfig/originbot_navigation.pc'
+[363.027s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/lib/python3.8/site-packages'
+[363.030s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/bin'
+[363.072s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/originbot_navigation/package.ps1'
+[363.102s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/originbot_navigation/package.dsv'
+[363.114s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/originbot_navigation/package.sh'
+[363.119s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/originbot_navigation/package.bash'
+[363.139s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/originbot_navigation/package.zsh'
+[363.149s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/colcon-core/packages/originbot_navigation)
+[363.174s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_example/originbot_teleop' with build type 'ament_cmake'
+[363.180s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_example/originbot_teleop'
+[363.227s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[363.227s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[363.485s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake /root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_example/originbot_teleop -DCMAKE_INSTALL_PREFIX=/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop
+[394.793s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake /root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_example/originbot_teleop -DCMAKE_INSTALL_PREFIX=/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop
+[394.799s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --build /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_teleop -- -j4 -l4
+[403.312s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/line_follower_perception' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --build /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/line_follower_perception -- -j4 -l4
+[403.522s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/hobot_audio' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --build /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/hobot_audio -- -j4 -l4
+[403.678s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/line_follower_perception': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --install /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/line_follower_perception
+[403.999s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(line_follower_perception)
+[404.009s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/line_follower_perception' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --install /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/line_follower_perception
+[404.034s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/line_follower_perception' for CMake module files
+[404.039s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/line_follower_perception' for CMake config files
+[404.042s] Level 1:colcon.colcon_core.shell:create_environment_hook('line_follower_perception', 'cmake_prefix_path')
+[404.058s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/line_follower_perception/share/line_follower_perception/hook/cmake_prefix_path.ps1'
+[404.074s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/line_follower_perception/share/line_follower_perception/hook/cmake_prefix_path.dsv'
+[404.087s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/line_follower_perception/share/line_follower_perception/hook/cmake_prefix_path.sh'
+[404.098s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/line_follower_perception/lib'
+[404.099s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/line_follower_perception/bin'
+[404.100s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/line_follower_perception/lib/pkgconfig/line_follower_perception.pc'
+[404.103s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/line_follower_perception/lib/python3.8/site-packages'
+[404.106s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/line_follower_perception/bin'
+[404.131s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/line_follower_perception/share/line_follower_perception/package.ps1'
+[404.136s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/line_follower_perception/share/line_follower_perception/package.dsv'
+[404.149s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/line_follower_perception/share/line_follower_perception/package.sh'
+[404.158s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/line_follower_perception/share/line_follower_perception/package.bash'
+[404.172s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/line_follower_perception/share/line_follower_perception/package.zsh'
+[404.182s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/line_follower_perception/share/colcon-core/packages/line_follower_perception)
+[404.232s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/hobot_audio': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --install /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/hobot_audio
+[404.555s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(line_follower_perception)
+[404.601s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/line_follower_perception' for CMake module files
+[404.613s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/line_follower_perception' for CMake config files
+[404.616s] Level 1:colcon.colcon_core.shell:create_environment_hook('line_follower_perception', 'cmake_prefix_path')
+[404.639s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/line_follower_perception/share/line_follower_perception/hook/cmake_prefix_path.ps1'
+[404.653s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/line_follower_perception/share/line_follower_perception/hook/cmake_prefix_path.dsv'
+[404.659s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/line_follower_perception/share/line_follower_perception/hook/cmake_prefix_path.sh'
+[404.666s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/line_follower_perception/lib'
+[404.668s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/line_follower_perception/bin'
+[404.669s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/line_follower_perception/lib/pkgconfig/line_follower_perception.pc'
+[404.671s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/line_follower_perception/lib/python3.8/site-packages'
+[404.674s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/line_follower_perception/bin'
+[404.700s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/line_follower_perception/share/line_follower_perception/package.ps1'
+[404.711s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/line_follower_perception/share/line_follower_perception/package.dsv'
+[404.725s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/line_follower_perception/share/line_follower_perception/package.sh'
+[404.741s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/line_follower_perception/share/line_follower_perception/package.bash'
+[404.761s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/line_follower_perception/share/line_follower_perception/package.zsh'
+[404.772s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/line_follower_perception/share/colcon-core/packages/line_follower_perception)
+[404.790s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_deeplearning/parking_search' with build type 'ament_cmake'
+[404.795s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_deeplearning/parking_search'
+[404.842s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[404.844s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[405.188s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/parking_search': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake /root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_deeplearning/parking_search -DCMAKE_INSTALL_PREFIX=/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/parking_search
+[409.847s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hobot_audio)
+[409.860s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/hobot_audio' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --install /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/hobot_audio
+[409.908s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio' for CMake module files
+[409.918s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio' for CMake config files
+[409.923s] Level 1:colcon.colcon_core.shell:create_environment_hook('hobot_audio', 'cmake_prefix_path')
+[409.948s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/hook/cmake_prefix_path.ps1'
+[409.952s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/hook/cmake_prefix_path.dsv'
+[409.958s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/hook/cmake_prefix_path.sh'
+[409.967s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib'
+[409.967s] Level 1:colcon.colcon_core.shell:create_environment_hook('hobot_audio', 'ld_library_path_lib')
+[410.015s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/hook/ld_library_path_lib.ps1'
+[410.023s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/hook/ld_library_path_lib.dsv'
+[410.030s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/hook/ld_library_path_lib.sh'
+[410.033s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/bin'
+[410.034s] Level 1:colcon.colcon_core.shell:create_environment_hook('hobot_audio', 'path')
+[410.076s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/hook/path.ps1'
+[410.080s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/hook/path.dsv'
+[410.083s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/hook/path.sh'
+[410.099s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/pkgconfig/hobot_audio.pc'
+[410.101s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/python3.8/site-packages'
+[410.107s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/bin'
+[410.112s] Level 1:colcon.colcon_core.shell:create_environment_hook('hobot_audio', 'pythonscriptspath')
+[410.156s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/hook/pythonscriptspath.ps1'
+[410.166s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/hook/pythonscriptspath.dsv'
+[410.173s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/hook/pythonscriptspath.sh'
+[410.212s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/package.ps1'
+[410.229s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/package.dsv'
+[410.239s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/package.sh'
+[410.250s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/package.bash'
+[410.260s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/package.zsh'
+[410.264s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/colcon-core/packages/hobot_audio)
+[410.743s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hobot_audio)
+[410.798s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio' for CMake module files
+[410.807s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio' for CMake config files
+[410.815s] Level 1:colcon.colcon_core.shell:create_environment_hook('hobot_audio', 'cmake_prefix_path')
+[410.856s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/hook/cmake_prefix_path.ps1'
+[410.868s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/hook/cmake_prefix_path.dsv'
+[410.878s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/hook/cmake_prefix_path.sh'
+[410.884s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib'
+[410.885s] Level 1:colcon.colcon_core.shell:create_environment_hook('hobot_audio', 'ld_library_path_lib')
+[410.925s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/hook/ld_library_path_lib.ps1'
+[410.933s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/hook/ld_library_path_lib.dsv'
+[410.937s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/hook/ld_library_path_lib.sh'
+[410.947s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/bin'
+[410.948s] Level 1:colcon.colcon_core.shell:create_environment_hook('hobot_audio', 'path')
+[410.988s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/hook/path.ps1'
+[410.996s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/hook/path.dsv'
+[411.003s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/hook/path.sh'
+[411.011s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/pkgconfig/hobot_audio.pc'
+[411.016s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/python3.8/site-packages'
+[411.018s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/bin'
+[411.019s] Level 1:colcon.colcon_core.shell:create_environment_hook('hobot_audio', 'pythonscriptspath')
+[411.061s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/hook/pythonscriptspath.ps1'
+[411.073s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/hook/pythonscriptspath.dsv'
+[411.090s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/hook/pythonscriptspath.sh'
+[411.160s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/package.ps1'
+[411.185s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/package.dsv'
+[411.200s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/package.sh'
+[411.218s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/package.bash'
+[411.227s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/package.zsh'
+[411.231s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/colcon-core/packages/hobot_audio)
+[411.253s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_deeplearning/play_football' with build type 'ament_cmake'
+[411.258s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_deeplearning/play_football'
+[411.309s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[411.318s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[411.530s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/play_football': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake /root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_deeplearning/play_football -DCMAKE_INSTALL_PREFIX=/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/play_football
+[439.077s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/parking_search' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake /root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_deeplearning/parking_search -DCMAKE_INSTALL_PREFIX=/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/parking_search
+[439.082s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/parking_search': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --build /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/parking_search -- -j4 -l4
+[449.658s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/play_football' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake /root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_deeplearning/play_football -DCMAKE_INSTALL_PREFIX=/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/play_football
+[449.669s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/play_football': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --build /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/play_football -- -j4 -l4
+[466.627s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --build /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_teleop -- -j4 -l4
+[467.104s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --install /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_teleop
+[467.324s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(originbot_teleop)
+[467.339s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --install /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_teleop
+[467.380s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop' for CMake module files
+[467.405s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop' for CMake config files
+[467.418s] Level 1:colcon.colcon_core.shell:create_environment_hook('originbot_teleop', 'cmake_prefix_path')
+[467.482s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/share/originbot_teleop/hook/cmake_prefix_path.ps1'
+[467.504s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/share/originbot_teleop/hook/cmake_prefix_path.dsv'
+[467.514s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/share/originbot_teleop/hook/cmake_prefix_path.sh'
+[467.523s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/lib'
+[467.524s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/bin'
+[467.525s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/lib/pkgconfig/originbot_teleop.pc'
+[467.527s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/lib/python3.8/site-packages'
+[467.529s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/bin'
+[467.579s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/share/originbot_teleop/package.ps1'
+[467.588s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/share/originbot_teleop/package.dsv'
+[467.602s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/share/originbot_teleop/package.sh'
+[467.607s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/share/originbot_teleop/package.bash'
+[467.622s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/share/originbot_teleop/package.zsh'
+[467.631s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/share/colcon-core/packages/originbot_teleop)
+[468.269s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(originbot_teleop)
+[468.332s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop' for CMake module files
+[468.350s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop' for CMake config files
+[468.352s] Level 1:colcon.colcon_core.shell:create_environment_hook('originbot_teleop', 'cmake_prefix_path')
+[468.395s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/share/originbot_teleop/hook/cmake_prefix_path.ps1'
+[468.402s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/share/originbot_teleop/hook/cmake_prefix_path.dsv'
+[468.411s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/share/originbot_teleop/hook/cmake_prefix_path.sh'
+[468.422s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/lib'
+[468.423s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/bin'
+[468.424s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/lib/pkgconfig/originbot_teleop.pc'
+[468.426s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/lib/python3.8/site-packages'
+[468.428s] Level 1:colcon.colcon_core.environment:checking '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/bin'
+[468.484s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/share/originbot_teleop/package.ps1'
+[468.510s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/share/originbot_teleop/package.dsv'
+[468.519s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/share/originbot_teleop/package.sh'
+[468.530s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/share/originbot_teleop/package.bash'
+[468.542s] INFO:colcon.colcon_core.shell:Creating package script '/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/share/originbot_teleop/package.zsh'
+[468.551s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/share/colcon-core/packages/originbot_teleop)
+[468.570s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_driver/ydlidar_ros2_driver' with build type 'ament_cmake'
+[468.575s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_driver/ydlidar_ros2_driver'
+[468.619s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[468.620s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[468.896s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake /root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_driver/ydlidar_ros2_driver -DCMAKE_INSTALL_PREFIX=/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/ydlidar_ros2_driver
+[743.503s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake /root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_driver/ydlidar_ros2_driver -DCMAKE_INSTALL_PREFIX=/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/ydlidar_ros2_driver
+[743.527s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --build /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/ydlidar_ros2_driver -- -j4 -l4

@@ -1,0 +1,25 @@
+[0.344s] Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/audio_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_linefollower:/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_demo:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --build /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/audio_control -- -j4 -l4
+[0.888s] [100%] Built target audio_control
+[0.999s] Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/audio_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_linefollower:/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_demo:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --build /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/audio_control -- -j4 -l4
+[1.437s] Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/audio_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_linefollower:/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_demo:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --install /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/audio_control
+[1.641s] -- Install configuration: ""
+[1.642s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/lib/audio_control/audio_control
+[1.643s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/audio_control/launch
+[1.654s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/audio_control/launch/hobot_audio_control.launch.py
+[1.655s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/lib/audio_control/README.md
+[1.656s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/ament_index/resource_index/package_run_dependencies/audio_control
+[1.657s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/ament_index/resource_index/parent_prefix_path/audio_control
+[1.658s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/audio_control/environment/ament_prefix_path.sh
+[1.659s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/audio_control/environment/ament_prefix_path.dsv
+[1.701s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/audio_control/environment/path.sh
+[1.701s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/audio_control/environment/path.dsv
+[1.702s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/audio_control/local_setup.bash
+[1.703s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/audio_control/local_setup.sh
+[1.704s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/audio_control/local_setup.zsh
+[1.705s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/audio_control/local_setup.dsv
+[1.706s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/audio_control/package.dsv
+[1.707s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/ament_index/resource_index/packages/audio_control
+[1.709s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/audio_control/cmake/audio_controlConfig.cmake
+[1.710s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/audio_control/cmake/audio_controlConfig-version.cmake
+[1.710s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/audio_control/package.xml
+[2.061s] Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/audio_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_linefollower:/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_demo:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --install /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/audio_control

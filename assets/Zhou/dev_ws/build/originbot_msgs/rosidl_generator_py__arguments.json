@@ -1,0 +1,30 @@
+{
+  "package_name": "originbot_msgs",
+  "output_dir": "/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_msgs/rosidl_generator_py/originbot_msgs",
+  "template_dir": "/opt/tros/share/rosidl_generator_py/cmake/../resource",
+  "idl_tuples": [
+    "/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_msgs/rosidl_adapter/originbot_msgs:msg/OriginbotStatus.idl",
+    "/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_msgs/rosidl_adapter/originbot_msgs:srv/OriginbotBuzzer.idl",
+    "/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_msgs/rosidl_adapter/originbot_msgs:srv/OriginbotLed.idl",
+    "/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_msgs/rosidl_adapter/originbot_msgs:srv/OriginbotPID.idl"
+  ],
+  "target_dependencies": [
+    "/opt/tros/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py",
+    "/opt/tros/lib/python3.8/site-packages/rosidl_generator_py/__init__.py",
+    "/opt/tros/lib/python3.8/site-packages/rosidl_generator_py/generate_py_impl.py",
+    "/opt/tros/share/rosidl_generator_py/cmake/../resource/_action_pkg_typesupport_entry_point.c.em",
+    "/opt/tros/share/rosidl_generator_py/cmake/../resource/_action.py.em",
+    "/opt/tros/share/rosidl_generator_py/cmake/../resource/_idl_pkg_typesupport_entry_point.c.em",
+    "/opt/tros/share/rosidl_generator_py/cmake/../resource/_idl_support.c.em",
+    "/opt/tros/share/rosidl_generator_py/cmake/../resource/_idl.py.em",
+    "/opt/tros/share/rosidl_generator_py/cmake/../resource/_msg_pkg_typesupport_entry_point.c.em",
+    "/opt/tros/share/rosidl_generator_py/cmake/../resource/_msg_support.c.em",
+    "/opt/tros/share/rosidl_generator_py/cmake/../resource/_msg.py.em",
+    "/opt/tros/share/rosidl_generator_py/cmake/../resource/_srv_pkg_typesupport_entry_point.c.em",
+    "/opt/tros/share/rosidl_generator_py/cmake/../resource/_srv.py.em",
+    "/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_msgs/rosidl_adapter/originbot_msgs/msg/OriginbotStatus.idl",
+    "/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_msgs/rosidl_adapter/originbot_msgs/srv/OriginbotBuzzer.idl",
+    "/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_msgs/rosidl_adapter/originbot_msgs/srv/OriginbotLed.idl",
+    "/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_msgs/rosidl_adapter/originbot_msgs/srv/OriginbotPID.idl"
+  ]
+}

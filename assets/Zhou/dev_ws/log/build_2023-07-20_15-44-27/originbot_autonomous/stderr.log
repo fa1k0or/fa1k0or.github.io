@@ -1,0 +1,28 @@
+[01m[K/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_example/originbot_autonomous/MPC/src/originbot_mpc.cc:[m[K In member function ‘[01m[Kdouble MpcController::solveQP(const Matrix&, const Matrix&, const Matrix&, const Matrix&, const Matrix&, const Matrix&, const Matrix&, int)[m[K’:
+[01m[K/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_example/originbot_autonomous/MPC/src/originbot_mpc.cc:352:21:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kh_matrix[m[K’ [[01;35m[K-Wvla[m[K]
+  352 |     qpOASES::real_t [01;35m[Kh_matrix[m[K[numOfHmatrixElements];
+      |                     [01;35m[K^~~~~~~~[m[K
+[01m[K/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_example/originbot_autonomous/MPC/src/originbot_mpc.cc:356:21:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kg_matrix[m[K’ [[01;35m[K-Wvla[m[K]
+  356 |     qpOASES::real_t [01;35m[Kg_matrix[m[K[numOfGmatrixElements];
+      |                     [01;35m[K^~~~~~~~[m[K
+[01m[K/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_example/originbot_autonomous/MPC/src/originbot_mpc.cc:366:21:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Klb[m[K’ [[01;35m[K-Wvla[m[K]
+  366 |     qpOASES::real_t [01;35m[Klb[m[K[num_param_];
+      |                     [01;35m[K^~[m[K
+[01m[K/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_example/originbot_autonomous/MPC/src/originbot_mpc.cc:367:21:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kub[m[K’ [[01;35m[K-Wvla[m[K]
+  367 |     qpOASES::real_t [01;35m[Kub[m[K[num_param_];
+      |                     [01;35m[K^~[m[K
+[01m[K/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_example/originbot_autonomous/MPC/src/originbot_mpc.cc:374:21:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kinequality_constraint[m[K’ [[01;35m[K-Wvla[m[K]
+  374 |     qpOASES::real_t [01;35m[Kinequality_constraint[m[K[num_param_ * num_constraints_];
+      |                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_example/originbot_autonomous/MPC/src/originbot_mpc.cc:375:21:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[KlbA[m[K’ [[01;35m[K-Wvla[m[K]
+  375 |     qpOASES::real_t [01;35m[KlbA[m[K[num_constraints_];
+      |                     [01;35m[K^~~[m[K
+[01m[K/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_example/originbot_autonomous/MPC/src/originbot_mpc.cc:376:21:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[KubA[m[K’ [[01;35m[K-Wvla[m[K]
+  376 |     qpOASES::real_t [01;35m[KubA[m[K[num_constraints_];
+      |                     [01;35m[K^~~[m[K
+[01m[K/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_example/originbot_autonomous/MPC/src/originbot_mpc.cc:396:12:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kresult[m[K’ [[01;35m[K-Wvla[m[K]
+  396 |     double [01;35m[Kresult[m[K[num_param_];
+      |            [01;35m[K^~~~~~[m[K
+[01m[K/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_example/originbot_autonomous/MPC/src/originbot_mpc.cc:344:41:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KnumOfIter[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  344 |                               [01;35m[Kconst int numOfIter[m[K)
+      |                               [01;35m[K~~~~~~~~~~^~~~~~~~~[m[K

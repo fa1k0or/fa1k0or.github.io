@@ -1,0 +1,21 @@
+[100%] Built target play_football
+-- Install configuration: ""
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/play_football/lib/play_football/play_football
+-- Set runtime path of "/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/play_football/lib/play_football/play_football" to ""
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/play_football/lib/play_football/config/
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/play_football/lib/play_football/config//play_football.bin
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/play_football/share/ament_index/resource_index/package_run_dependencies/play_football
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/play_football/share/ament_index/resource_index/parent_prefix_path/play_football
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/play_football/share/play_football/environment/ament_prefix_path.sh
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/play_football/share/play_football/environment/ament_prefix_path.dsv
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/play_football/share/play_football/environment/path.sh
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/play_football/share/play_football/environment/path.dsv
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/play_football/share/play_football/local_setup.bash
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/play_football/share/play_football/local_setup.sh
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/play_football/share/play_football/local_setup.zsh
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/play_football/share/play_football/local_setup.dsv
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/play_football/share/play_football/package.dsv
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/play_football/share/ament_index/resource_index/packages/play_football
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/play_football/share/play_football/cmake/play_footballConfig.cmake
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/play_football/share/play_football/cmake/play_footballConfig-version.cmake
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/play_football/share/play_football/package.xml

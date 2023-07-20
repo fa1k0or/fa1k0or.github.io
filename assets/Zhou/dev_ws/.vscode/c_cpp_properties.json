@@ -1,0 +1,34 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_base/include/**",
+        "/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/serial/include/**",
+        "/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/include/**",
+        "/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs/include/**",
+        "/opt/tros/include/**",
+        "/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_audio/audio_control/include/**",
+        "/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_audio/hobot_audio/include/**",
+        "/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_base/include/**",
+        "/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_deeplearning/body_tracking/include/**",
+        "/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_deeplearning/gesture_control/include/**",
+        "/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_deeplearning/line_follower_perception/include/**",
+        "/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_deeplearning/parking_search/include/**",
+        "/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_deeplearning/play_football/include/**",
+        "/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_driver/serial_ros2/include/**",
+        "/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_example/originbot_teleop/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-arm64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

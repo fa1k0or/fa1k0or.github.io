@@ -1,0 +1,28 @@
+[100%] Built target body_tracking
+-- Install configuration: ""
+-- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/lib/body_tracking/body_tracking
+-- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/launch
+-- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/launch/hobot_body_tracking.launch.py
+-- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/launch/hobot_body_tracking_without_gesture.launch.py
+-- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/lib/body_tracking/scripts
+-- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/lib/body_tracking/scripts/gpio.py
+-- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/lib/body_tracking/README.md
+-- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/lib/body_tracking/images
+-- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/lib/body_tracking/images/image-ok.png
+-- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/lib/body_tracking/images/image-palm.png
+-- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/ament_index/resource_index/package_run_dependencies/body_tracking
+-- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/ament_index/resource_index/parent_prefix_path/body_tracking
+-- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/environment/ament_prefix_path.sh
+-- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/environment/ament_prefix_path.dsv
+-- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/environment/path.sh
+-- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/environment/path.dsv
+-- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/local_setup.bash
+-- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/local_setup.sh
+-- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/local_setup.zsh
+-- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/local_setup.dsv
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/package.dsv
+-- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/ament_index/resource_index/packages/body_tracking
+-- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/cmake/body_trackingConfig.cmake
+-- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/cmake/body_trackingConfig-version.cmake
+-- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/package.xml

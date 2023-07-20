@@ -1,0 +1,32 @@
+[0.294s] Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/body_tracking': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_linefollower:/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_demo:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --build /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/body_tracking -- -j4 -l4
+[0.843s] [100%] Built target body_tracking
+[0.976s] Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/body_tracking' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_linefollower:/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_demo:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --build /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/body_tracking -- -j4 -l4
+[1.302s] Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/body_tracking': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_linefollower:/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_demo:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --install /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/body_tracking
+[1.432s] -- Install configuration: ""
+[1.455s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/lib/body_tracking/body_tracking
+[1.469s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/launch
+[1.470s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/launch/hobot_body_tracking.launch.py
+[1.471s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/launch/hobot_body_tracking_without_gesture.launch.py
+[1.472s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/lib/body_tracking/scripts
+[1.472s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/lib/body_tracking/scripts/gpio.py
+[1.473s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/lib/body_tracking/README.md
+[1.474s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/lib/body_tracking/images
+[1.479s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/lib/body_tracking/images/image-ok.png
+[1.480s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/lib/body_tracking/images/image-palm.png
+[1.481s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/ament_index/resource_index/package_run_dependencies/body_tracking
+[1.503s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/ament_index/resource_index/parent_prefix_path/body_tracking
+[1.504s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/environment/ament_prefix_path.sh
+[1.505s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/environment/ament_prefix_path.dsv
+[1.506s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/environment/path.sh
+[1.507s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/environment/path.dsv
+[1.508s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/local_setup.bash
+[1.509s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/local_setup.sh
+[1.510s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/local_setup.zsh
+[1.511s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/local_setup.dsv
+[1.512s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/package.dsv
+[1.514s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/ament_index/resource_index/packages/body_tracking
+[1.537s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.538s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/cmake/body_trackingConfig.cmake
+[1.539s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/cmake/body_trackingConfig-version.cmake
+[1.539s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/body_tracking/share/body_tracking/package.xml
+[1.749s] Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/body_tracking' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_linefollower:/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_demo:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --install /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/body_tracking

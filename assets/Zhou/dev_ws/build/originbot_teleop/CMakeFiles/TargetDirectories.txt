@@ -1,0 +1,10 @@
+/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_teleop/CMakeFiles/install/strip.dir
+/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_teleop/CMakeFiles/install/local.dir
+/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_teleop/CMakeFiles/install.dir
+/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_teleop/CMakeFiles/list_install_components.dir
+/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_teleop/CMakeFiles/rebuild_cache.dir
+/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_teleop/CMakeFiles/edit_cache.dir
+/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_teleop/CMakeFiles/test.dir
+/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_teleop/CMakeFiles/originbot_teleop_uninstall.dir
+/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_teleop/CMakeFiles/originbot_teleop.dir
+/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_teleop/CMakeFiles/uninstall.dir

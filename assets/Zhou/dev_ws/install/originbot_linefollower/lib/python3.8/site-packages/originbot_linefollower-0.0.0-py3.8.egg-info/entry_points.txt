@@ -1,0 +1,3 @@
+[console_scripts]
+follower = originbot_linefollower.follower:main
+

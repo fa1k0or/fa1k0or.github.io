@@ -1,0 +1,4 @@
+SYS_ROOT is 
+hobot_cv_LIBRARIES is /opt/tros/lib/libhobot_cv.so
+update HOBOTCV_LIB_INSTALL_PATH as /opt/tros/lib
+HOBOTCV_LIB_INSTALL_PATH is /opt/tros/lib

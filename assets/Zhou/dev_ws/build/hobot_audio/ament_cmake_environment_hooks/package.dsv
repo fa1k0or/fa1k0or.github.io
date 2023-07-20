@@ -1,0 +1,4 @@
+source;share/hobot_audio/local_setup.bash
+source;share/hobot_audio/local_setup.dsv
+source;share/hobot_audio/local_setup.sh
+source;share/hobot_audio/local_setup.zsh

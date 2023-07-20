@@ -1,0 +1,10 @@
+/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/play_football/CMakeFiles/install/strip.dir
+/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/play_football/CMakeFiles/install/local.dir
+/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/play_football/CMakeFiles/install.dir
+/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/play_football/CMakeFiles/list_install_components.dir
+/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/play_football/CMakeFiles/rebuild_cache.dir
+/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/play_football/CMakeFiles/edit_cache.dir
+/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/play_football/CMakeFiles/test.dir
+/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/play_football/CMakeFiles/play_football.dir
+/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/play_football/CMakeFiles/play_football_uninstall.dir
+/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/play_football/CMakeFiles/uninstall.dir

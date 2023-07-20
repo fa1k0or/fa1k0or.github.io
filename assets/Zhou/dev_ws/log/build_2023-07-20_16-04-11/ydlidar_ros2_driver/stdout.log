@@ -1,0 +1,33 @@
+[ 50%] Built target ydlidar_ros2_driver_client
+[100%] Built target ydlidar_ros2_driver_node
+-- Install configuration: ""
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_node
+-- Set runtime path of "/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_node" to ""
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_client
+-- Set runtime path of "/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_client" to ""
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/.ydlidar_launch.py.swp
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar.py
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch.py
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch_view.py
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/ydlidar.yaml
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/startup
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/startup/initenv.sh
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/config
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/config/ydlidar.rviz
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/package_run_dependencies/ydlidar_ros2_driver
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/parent_prefix_path/ydlidar_ros2_driver
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/ament_prefix_path.sh
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/ament_prefix_path.dsv
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/path.sh
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/path.dsv
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.bash
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.sh
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.zsh
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.dsv
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.dsv
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/packages/ydlidar_ros2_driver
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/cmake/ydlidar_ros2_driverConfig.cmake
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/cmake/ydlidar_ros2_driverConfig-version.cmake
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.xml

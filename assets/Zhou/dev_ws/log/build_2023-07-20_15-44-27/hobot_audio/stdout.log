@@ -1,0 +1,141 @@
+-- The C compiler identification is GNU 9.3.0
+-- The CXX compiler identification is GNU 9.3.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 0.9.9 (/opt/tros/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 2.4.1 (/opt/tros/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.2.1 (/opt/tros/share/rosidl_adapter/cmake)
+-- Found FastRTPS: /opt/tros/include  
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.3 (/opt/tros/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found geometry_msgs: 2.0.5 (/opt/tros/share/geometry_msgs/cmake)
+-- Found audio_msg: 0.0.0 (/opt/tros/share/audio_msg/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/hobot_audio
+[35m[1mScanning dependencies of target hobot_audio[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/hobot_audio.dir/src/utils/alsa_device.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/hobot_audio.dir/src/audio_example.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/hobot_audio.dir/src/audio_engine/audioengine.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/hobot_audio.dir/src/audio_capture/hb_audio_capture.cpp.o[0m
+[100%] [32m[1mLinking CXX executable hobot_audio[0m
+[100%] Built target hobot_audio
+-- Install configuration: ""
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib//libdynamicwfst.so
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib//libhisf.so
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib//libhrsc.so
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib//liblog_manage.so
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib//libmodelvad.so
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio/hobot_audio
+-- Set runtime path of "/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio/hobot_audio" to ""
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/audio.sh
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/audio_config.json
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/CRGRU_SUBBAND_HIOK.meanvar
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/CRGRU_SUBBAND_HIOK.params
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/Dt-99.params
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/asr
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/asr/am_model
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/asr/am_model/state
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/asr/am_model/state/am_model.hbm_2.0_j3_hbdk3.26.8
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/asr/am_model/state/bpu_config.json
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/asr/am_model/state/decode.meanvar.ctc.1.0
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/asr/am_model/state/states.txt_2.0_j3_hbdk3.26.8
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/asr/asr_embed.conf
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/asr/fillter_word_file
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/asr/graph_v0.9
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/asr/graph_v0.9/grammar.resource.grm.RecoGrf
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/asr/graph_v0.9/grammar.resource.grm.RecoVoc
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/asr/graph_v0.9/grammar.resource.grm.RecogNdinfo
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/asr/graph_v0.9/grammar.resource.grm.entmap
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/asr/graph_v0.9/grammar.resource.grm.lmInfo
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/asr/graph_v0.9/grammar.resource.grm.lmInfo.forla
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/asr/graph_v0.9/grammar.resource.grm.wcinfo
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/asr/graph_v0.9/grammar.resource.nd.ifhave.Unibigramla
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/asr/graph_v0.9/grammar.resource.txt
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/asr/graph_v0.9/grammar.resource.wdclass.bigramla
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/asr/graph_v0.9/grammar.resource.wdclass.unigramla
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/asr/hotword.json.common_misrec
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/asr/hotword.json.filter
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/asr/lm
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/asr/lm/lm.fsn
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/asr/multi_pron_word.txt
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/asr/rn
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/asr/rn/correct.list
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/asr/rn/low_case.dat
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/asr/rn/regex_rule_const
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/asr/rn/regex_rule_const.all
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/asr/rn/regex_rule_const.search
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/asr/rn/regex_rule_const.search.bak
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/asr/rn/regex_rule_normal
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/asr/rn/regex_rule_normal.all
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/asr/rn/regex_rule_normal.jd
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/asr/rn/regex_rule_normal.search
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/asr/rn/regex_rule_normal.search.bak
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/asr/rn/regex_rule_normal_digit_3
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/asr/rn/regex_rule_normal_time
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/asr/rn/regex_rule_normal_time_digit
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/asr/rn.conf
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/asr/socket_prob_map
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/asr/sy_map_new
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/cmd_word.json
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/hisf_config_comms_full_azimuth_encrypt.ini
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/hisf_config_encrypt.ini
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/hisf_config_play_encrypt.ini
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/hrsc_config.cfg
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/modelvad
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/modelvad/20201012-211617-vad-j2_l10r5_cnn16x7x7_cnn16x5x5_dnn48x4_43k_500k_3classes_xiaoya_data-v9-initials-vowel-more-strict-align-quanti.json
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/modelvad/20201012-211617-vad-j2_l10r5_cnn16x7x7_cnn16x5x5_dnn48x4_43k_500k_3classes_xiaoya_data-v9-initials-vowel-more-strict-align-quanti.meanvar
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/modelvad/20201012-211617-vad-j2_l10r5_cnn16x7x7_cnn16x5x5_dnn48x4_43k_500k_3classes_xiaoya_data-v9-initials-vowel-more-strict-align-quanti.params
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/lib/hobot_audio//config/hrsc/modelvad/config.ini
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/launch
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/launch/hobot_audio.launch.py
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/bin/hobot_audio
+-- Set runtime path of "/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/bin/hobot_audio" to ""
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/environment/library_path.sh
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/environment/library_path.dsv
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/ament_index/resource_index/package_run_dependencies/hobot_audio
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/ament_index/resource_index/parent_prefix_path/hobot_audio
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/environment/ament_prefix_path.sh
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/environment/ament_prefix_path.dsv
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/environment/path.sh
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/environment/path.dsv
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/local_setup.bash
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/local_setup.sh
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/local_setup.zsh
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/local_setup.dsv
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/package.dsv
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/ament_index/resource_index/packages/hobot_audio
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/cmake/hobot_audioExport.cmake
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/cmake/hobot_audioExport-noconfig.cmake
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/cmake/hobot_audioConfig.cmake
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/cmake/hobot_audioConfig-version.cmake
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/hobot_audio/share/hobot_audio/package.xml

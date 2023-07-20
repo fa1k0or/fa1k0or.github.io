@@ -1,0 +1,95 @@
+[0.247s] Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/gesture_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake /root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_deeplearning/gesture_control -DCMAKE_INSTALL_PREFIX=/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control
+[0.875s] -- The C compiler identification is GNU 9.3.0
+[1.696s] -- The CXX compiler identification is GNU 9.3.0
+[1.740s] -- Check for working C compiler: /usr/bin/cc
+[2.699s] -- Check for working C compiler: /usr/bin/cc -- works
+[2.734s] -- Detecting C compiler ABI info
+[3.773s] -- Detecting C compiler ABI info - done
+[4.023s] -- Detecting C compile features
+[4.032s] -- Detecting C compile features - done
+[4.075s] -- Check for working CXX compiler: /usr/bin/c++
+[5.054s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[5.076s] -- Detecting CXX compiler ABI info
+[6.412s] -- Detecting CXX compiler ABI info - done
+[6.694s] -- Detecting CXX compile features
+[6.698s] -- Detecting CXX compile features - done
+[6.728s] -- Found ament_cmake: 0.9.9 (/opt/tros/share/ament_cmake/cmake)
+[7.207s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[7.209s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[11.492s] -- Found rclcpp: 2.4.1 (/opt/tros/share/rclcpp/cmake)
+[12.077s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[12.147s] -- Found rosidl_adapter: 1.2.1 (/opt/tros/share/rosidl_adapter/cmake)
+[12.374s] -- Found FastRTPS: /opt/tros/include  
+[13.332s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[14.295s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/tros/share/rmw_implementation_cmake/cmake)
+[14.315s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[14.322s] -- Looking for pthread.h
+[15.588s] -- Looking for pthread.h - found
+[15.596s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[17.052s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[17.061s] -- Looking for pthread_create in pthreads
+[17.933s] -- Looking for pthread_create in pthreads - not found
+[17.940s] -- Looking for pthread_create in pthread
+[18.764s] -- Looking for pthread_create in pthread - found
+[18.768s] -- Found Threads: TRUE  
+[20.524s] -- Found std_msgs: 2.0.5 (/opt/tros/share/std_msgs/cmake)
+[20.980s] -- Found rosidl_default_generators: 1.0.1 (/opt/tros/share/rosidl_default_generators/cmake)
+[21.250s] -- Found geometry_msgs: 2.0.5 (/opt/tros/share/geometry_msgs/cmake)
+[21.949s] -- Found ai_msgs: 0.0.0 (/opt/tros/share/ai_msgs/cmake)
+[26.612s] -- Found ament_lint_auto: 0.9.6 (/opt/tros/share/ament_lint_auto/cmake)
+[28.287s] -- Added test 'copyright' to check source files copyright and LICENSE
+[28.305s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[28.314s] -- Configured cppcheck include dirs: /root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_deeplearning/gesture_control/include;$<BUILD_INTERFACE:/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_deeplearning/gesture_control/include>
+[28.316s] -- Configured cppcheck exclude dirs and/or files: 
+[28.329s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[28.330s] -- Configured cpplint exclude dirs and/or files: 
+[28.338s] -- Added test 'flake8' to check Python code syntax and style conventions
+[28.348s] -- Added test 'lint_cmake' to check CMake code style
+[28.356s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[28.370s] -- Added test 'uncrustify' to check C / C++ code style
+[28.372s] -- Configured uncrustify additional arguments: 
+[28.379s] -- Added test 'xmllint' to check XML markup files
+[28.480s] -- Configuring done
+[28.587s] -- Generating done
+[28.602s] -- Build files have been written to: /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/gesture_control
+[28.714s] Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/gesture_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake /root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_deeplearning/gesture_control -DCMAKE_INSTALL_PREFIX=/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control
+[28.726s] Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/gesture_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --build /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/gesture_control -- -j4 -l4
+[29.120s] [35m[1mScanning dependencies of target gesture_control[0m
+[30.014s] [ 20%] [32mBuilding CXX object CMakeFiles/gesture_control.dir/src/main.cpp.o[0m
+[66.622s] [ 40%] [32mBuilding CXX object CMakeFiles/gesture_control.dir/src/param_node.cpp.o[0m
+[106.273s] [ 60%] [32mBuilding CXX object CMakeFiles/gesture_control.dir/src/gesture_control_node.cpp.o[0m
+[200.965s] [ 80%] [32mBuilding CXX object CMakeFiles/gesture_control.dir/src/gesture_control_engine.cpp.o[0m
+[250.609s] [100%] [32m[1mLinking CXX executable gesture_control[0m
+[260.814s] [100%] Built target gesture_control
+[260.972s] Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/gesture_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --build /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/gesture_control -- -j4 -l4
+[261.627s] Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/gesture_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --install /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/gesture_control
+[261.759s] -- Install configuration: ""
+[261.765s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/lib/gesture_control/gesture_control
+[261.794s] -- Set runtime path of "/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/lib/gesture_control/gesture_control" to ""
+[261.796s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/share/gesture_control/launch
+[261.797s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/share/gesture_control/launch/hobot_gesture_control.launch.py
+[261.807s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/lib/gesture_control/README.md
+[261.809s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/lib/gesture_control/images
+[261.811s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/lib/gesture_control/images/image-awesome.png
+[261.813s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/lib/gesture_control/images/image-ok.png
+[261.815s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/lib/gesture_control/images/image-palm.png
+[261.820s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/lib/gesture_control/images/image-thumbleft.png
+[261.821s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/lib/gesture_control/images/image-thumbright.png
+[261.822s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/lib/gesture_control/images/image-thumbup.png
+[261.826s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/lib/gesture_control/images/image-victory.png
+[261.829s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/share/ament_index/resource_index/package_run_dependencies/gesture_control
+[261.834s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/share/ament_index/resource_index/parent_prefix_path/gesture_control
+[261.840s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/share/gesture_control/environment/ament_prefix_path.sh
+[261.845s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/share/gesture_control/environment/ament_prefix_path.dsv
+[261.859s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/share/gesture_control/environment/path.sh
+[261.865s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/share/gesture_control/environment/path.dsv
+[261.866s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/share/gesture_control/local_setup.bash
+[261.868s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/share/gesture_control/local_setup.sh
+[261.881s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/share/gesture_control/local_setup.zsh
+[261.888s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/share/gesture_control/local_setup.dsv
+[261.889s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/share/gesture_control/package.dsv
+[261.890s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/share/ament_index/resource_index/packages/gesture_control
+[261.924s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/share/gesture_control/cmake/gesture_controlConfig.cmake
+[261.926s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/share/gesture_control/cmake/gesture_controlConfig-version.cmake
+[261.927s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/gesture_control/share/gesture_control/package.xml
+[261.929s] Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/gesture_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --install /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/gesture_control
