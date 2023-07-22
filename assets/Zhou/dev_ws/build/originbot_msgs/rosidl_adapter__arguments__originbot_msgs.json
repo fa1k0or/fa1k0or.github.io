@@ -1,9 +1,0 @@
-{
-  "package_name": "originbot_msgs",
-  "non_idl_tuples": [
-    "/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_msgs:msg/OriginbotStatus.msg",
-    "/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_msgs:srv/OriginbotBuzzer.srv",
-    "/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_msgs:srv/OriginbotLed.srv",
-    "/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_msgs:srv/OriginbotPID.srv"
-  ]
-}
