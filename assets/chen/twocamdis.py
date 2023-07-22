@@ -30,8 +30,8 @@ def calcRegression(R):
 
     print("Wa Ho I'm Calculating Regression")
 
-a = 1 
-b = 1 
+a = 0.8
+b = 0
 c = 1 
 def calcDis(P):
     #P = 1 + 1/(x + 1)
