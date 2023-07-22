@@ -1,0 +1,70 @@
+[0.283s] Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake /root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_navigation -DCMAKE_INSTALL_PREFIX=/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation
+[1.250s] -- The C compiler identification is GNU 9.3.0
+[2.116s] -- The CXX compiler identification is GNU 9.3.0
+[2.219s] -- Check for working C compiler: /usr/bin/cc
+[3.448s] -- Check for working C compiler: /usr/bin/cc -- works
+[3.472s] -- Detecting C compiler ABI info
+[4.821s] -- Detecting C compiler ABI info - done
+[5.064s] -- Detecting C compile features
+[5.073s] -- Detecting C compile features - done
+[5.128s] -- Check for working CXX compiler: /usr/bin/c++
+[6.336s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[6.362s] -- Detecting CXX compiler ABI info
+[7.796s] -- Detecting CXX compiler ABI info - done
+[8.056s] -- Detecting CXX compile features
+[8.065s] -- Detecting CXX compile features - done
+[8.090s] -- Found ament_cmake: 0.9.9 (/opt/tros/share/ament_cmake/cmake)
+[8.528s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[8.530s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[13.065s] -- Found nav2_bringup: 0.4.7 (/opt/tros/share/nav2_bringup/cmake)
+[13.076s] -- Found ament_lint_auto: 0.9.6 (/opt/tros/share/ament_lint_auto/cmake)
+[15.046s] -- Added test 'copyright' to check source files copyright and LICENSE
+[15.070s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[15.073s] -- Configured cppcheck include dirs: 
+[15.075s] -- Configured cppcheck exclude dirs and/or files: 
+[15.096s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[15.098s] -- Configured cpplint exclude dirs and/or files: 
+[15.120s] -- Added test 'flake8' to check Python code syntax and style conventions
+[15.131s] -- Added test 'lint_cmake' to check CMake code style
+[15.144s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[15.161s] -- Added test 'uncrustify' to check C / C++ code style
+[15.162s] -- Configured uncrustify additional arguments: 
+[15.173s] -- Added test 'xmllint' to check XML markup files
+[15.200s] -- Configuring done
+[15.237s] -- Generating done
+[15.254s] -- Build files have been written to: /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_navigation
+[15.347s] Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake /root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_navigation -DCMAKE_INSTALL_PREFIX=/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation
+[15.374s] Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --build /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_navigation -- -j4 -l4
+[15.915s] Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --build /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_navigation -- -j4 -l4
+[16.230s] Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --install /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_navigation
+[16.384s] -- Install configuration: ""
+[16.387s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/originbot_navigation/launch
+[16.390s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/originbot_navigation/launch/cartographer.launch.py
+[16.398s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/originbot_navigation/launch/ekf.md
+[16.405s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/originbot_navigation/launch/nav_bringup.launch.py
+[16.407s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/originbot_navigation/launch/occupancy_grid.launch.py
+[16.408s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/originbot_navigation/launch/odom_ekf.launch.py
+[16.410s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/originbot_navigation/param
+[16.411s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/originbot_navigation/param/originbot_nav2.yaml
+[16.420s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/originbot_navigation/maps
+[16.421s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/originbot_navigation/maps/my_map.pgm
+[16.428s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/originbot_navigation/maps/my_map.yaml
+[16.432s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/originbot_navigation/config
+[16.433s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/originbot_navigation/config/ekf.yaml
+[16.434s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/originbot_navigation/config/lds_2d.lua
+[16.435s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/ament_index/resource_index/package_run_dependencies/originbot_navigation
+[16.439s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/ament_index/resource_index/parent_prefix_path/originbot_navigation
+[16.441s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/originbot_navigation/environment/ament_prefix_path.sh
+[16.442s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/originbot_navigation/environment/ament_prefix_path.dsv
+[16.443s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/originbot_navigation/environment/path.sh
+[16.459s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/originbot_navigation/environment/path.dsv
+[16.460s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/originbot_navigation/local_setup.bash
+[16.468s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/originbot_navigation/local_setup.sh
+[16.469s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/originbot_navigation/local_setup.zsh
+[16.470s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/originbot_navigation/local_setup.dsv
+[16.471s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/originbot_navigation/package.dsv
+[16.472s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/ament_index/resource_index/packages/originbot_navigation
+[16.473s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/originbot_navigation/cmake/originbot_navigationConfig.cmake
+[16.474s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/originbot_navigation/cmake/originbot_navigationConfig-version.cmake
+[16.519s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_navigation/share/originbot_navigation/package.xml
+[16.565s] Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --install /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_navigation

@@ -1,0 +1,25 @@
+[0.188s] Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --build /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_teleop -- -j4 -l4
+[0.750s] [100%] Built target originbot_teleop
+[1.017s] Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --build /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_teleop -- -j4 -l4
+[1.518s] Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --install /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_teleop
+[1.670s] -- Install configuration: ""
+[1.671s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/include
+[1.672s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/include/originbot_teleop.hpp
+[1.673s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/lib/originbot_teleop/originbot_teleop
+[1.674s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/share/ament_index/resource_index/package_run_dependencies/originbot_teleop
+[1.675s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/share/ament_index/resource_index/parent_prefix_path/originbot_teleop
+[1.676s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/share/originbot_teleop/environment/ament_prefix_path.sh
+[1.686s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/share/originbot_teleop/environment/ament_prefix_path.dsv
+[1.701s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/share/originbot_teleop/environment/path.sh
+[1.712s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/share/originbot_teleop/environment/path.dsv
+[1.713s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/share/originbot_teleop/local_setup.bash
+[1.721s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/share/originbot_teleop/local_setup.sh
+[1.725s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/share/originbot_teleop/local_setup.zsh
+[1.726s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/share/originbot_teleop/local_setup.dsv
+[1.727s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/share/originbot_teleop/package.dsv
+[1.728s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/share/ament_index/resource_index/packages/originbot_teleop
+[1.729s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/share/originbot_teleop/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.730s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/share/originbot_teleop/cmake/originbot_teleopConfig.cmake
+[1.731s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/share/originbot_teleop/cmake/originbot_teleopConfig-version.cmake
+[1.732s] -- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_teleop/share/originbot_teleop/package.xml
+[1.842s] Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --install /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_teleop

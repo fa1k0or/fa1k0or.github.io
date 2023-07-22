@@ -1,0 +1,32 @@
+[0.637s] Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_autonomous': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --build /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_autonomous -- -j4 -l4
+[1.210s] [ 50%] Built target mpc_node
+[1.390s] [100%] Built target purepursuit_node
+[1.489s] Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_autonomous' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --build /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_autonomous -- -j4 -l4
+[1.716s] Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_autonomous': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --install /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_autonomous
+[1.883s] -- Install configuration: ""
+[1.884s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_autonomous/share/ament_index/resource_index/package_run_dependencies/originbot_autonomous
+[1.886s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_autonomous/share/ament_index/resource_index/parent_prefix_path/originbot_autonomous
+[1.888s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_autonomous/share/originbot_autonomous/environment/ament_prefix_path.sh
+[1.889s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_autonomous/share/originbot_autonomous/environment/ament_prefix_path.dsv
+[1.890s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_autonomous/share/originbot_autonomous/environment/path.sh
+[1.891s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_autonomous/share/originbot_autonomous/environment/path.dsv
+[1.892s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_autonomous/share/originbot_autonomous/local_setup.bash
+[1.893s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_autonomous/share/originbot_autonomous/local_setup.sh
+[1.893s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_autonomous/share/originbot_autonomous/local_setup.zsh
+[1.894s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_autonomous/share/originbot_autonomous/local_setup.dsv
+[1.895s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_autonomous/share/originbot_autonomous/package.dsv
+[1.896s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_autonomous/share/ament_index/resource_index/packages/originbot_autonomous
+[1.898s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_autonomous/share/originbot_autonomous/cmake/originbot_autonomousConfig.cmake
+[1.900s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_autonomous/share/originbot_autonomous/cmake/originbot_autonomousConfig-version.cmake
+[1.903s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_autonomous/share/originbot_autonomous/package.xml
+[1.907s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_autonomous/lib/originbot_autonomous/purepursuit_node
+[1.910s] -- Set runtime path of "/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_autonomous/lib/originbot_autonomous/purepursuit_node" to ""
+[1.912s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_autonomous/lib/originbot_autonomous/mpc_node
+[1.973s] -- Set runtime path of "/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_autonomous/lib/originbot_autonomous/mpc_node" to ""
+[1.979s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_autonomous/share/originbot_autonomous/config
+[1.980s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_autonomous/share/originbot_autonomous/config/mpc_settings.yaml
+[1.981s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_autonomous/share/originbot_autonomous/waypoints
+[1.982s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_autonomous/share/originbot_autonomous/waypoints/path.csv
+[1.983s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_autonomous/share/originbot_autonomous/launch
+[1.984s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_autonomous/share/originbot_autonomous/launch/originbot_mpc.launch.py
+[2.163s] Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_autonomous' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --install /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_autonomous

@@ -1,0 +1,25 @@
+[0.576s] Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/play_football': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --build /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/play_football -- -j4 -l4
+[1.327s] [100%] Built target play_football
+[1.418s] Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/play_football' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --build /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/play_football -- -j4 -l4
+[1.712s] Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/play_football': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --install /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/play_football
+[1.777s] -- Install configuration: ""
+[1.779s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/play_football/lib/play_football/play_football
+[1.797s] -- Set runtime path of "/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/play_football/lib/play_football/play_football" to ""
+[1.802s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/play_football/lib/play_football/config/
+[1.807s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/play_football/lib/play_football/config//play_football.bin
+[1.979s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/play_football/share/ament_index/resource_index/package_run_dependencies/play_football
+[1.982s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/play_football/share/ament_index/resource_index/parent_prefix_path/play_football
+[1.984s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/play_football/share/play_football/environment/ament_prefix_path.sh
+[1.985s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/play_football/share/play_football/environment/ament_prefix_path.dsv
+[2.018s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/play_football/share/play_football/environment/path.sh
+[2.019s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/play_football/share/play_football/environment/path.dsv
+[2.021s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/play_football/share/play_football/local_setup.bash
+[2.023s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/play_football/share/play_football/local_setup.sh
+[2.023s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/play_football/share/play_football/local_setup.zsh
+[2.025s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/play_football/share/play_football/local_setup.dsv
+[2.026s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/play_football/share/play_football/package.dsv
+[2.030s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/play_football/share/ament_index/resource_index/packages/play_football
+[2.031s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/play_football/share/play_football/cmake/play_footballConfig.cmake
+[2.033s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/play_football/share/play_football/cmake/play_footballConfig-version.cmake
+[2.035s] -- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/play_football/share/play_football/package.xml
+[2.059s] Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/play_football' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --install /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/play_football

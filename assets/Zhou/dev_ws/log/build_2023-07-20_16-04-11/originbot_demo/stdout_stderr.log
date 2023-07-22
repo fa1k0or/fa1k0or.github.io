@@ -1,0 +1,55 @@
+running egg_info
+creating ../../../build/originbot_demo/originbot_demo.egg-info
+writing ../../../build/originbot_demo/originbot_demo.egg-info/PKG-INFO
+writing dependency_links to ../../../build/originbot_demo/originbot_demo.egg-info/dependency_links.txt
+writing entry points to ../../../build/originbot_demo/originbot_demo.egg-info/entry_points.txt
+writing requirements to ../../../build/originbot_demo/originbot_demo.egg-info/requires.txt
+writing top-level names to ../../../build/originbot_demo/originbot_demo.egg-info/top_level.txt
+writing manifest file '../../../build/originbot_demo/originbot_demo.egg-info/SOURCES.txt'
+reading manifest file '../../../build/originbot_demo/originbot_demo.egg-info/SOURCES.txt'
+writing manifest file '../../../build/originbot_demo/originbot_demo.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_demo/build
+creating /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_demo/build/lib
+creating /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_demo/build/lib/originbot_demo
+copying originbot_demo/__init__.py -> /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_demo/build/lib/originbot_demo
+copying originbot_demo/control_buzzer.py -> /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_demo/build/lib/originbot_demo
+copying originbot_demo/control_led.py -> /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_demo/build/lib/originbot_demo
+copying originbot_demo/draw_circle.py -> /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_demo/build/lib/originbot_demo
+copying originbot_demo/echo_odom.py -> /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_demo/build/lib/originbot_demo
+copying originbot_demo/echo_status.py -> /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_demo/build/lib/originbot_demo
+copying originbot_demo/transport_img.py -> /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_demo/build/lib/originbot_demo
+running install
+running install_lib
+creating /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_demo/lib/python3.8/site-packages/originbot_demo
+copying /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_demo/build/lib/originbot_demo/__init__.py -> /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_demo/lib/python3.8/site-packages/originbot_demo
+copying /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_demo/build/lib/originbot_demo/control_buzzer.py -> /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_demo/lib/python3.8/site-packages/originbot_demo
+copying /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_demo/build/lib/originbot_demo/control_led.py -> /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_demo/lib/python3.8/site-packages/originbot_demo
+copying /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_demo/build/lib/originbot_demo/draw_circle.py -> /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_demo/lib/python3.8/site-packages/originbot_demo
+copying /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_demo/build/lib/originbot_demo/echo_odom.py -> /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_demo/lib/python3.8/site-packages/originbot_demo
+copying /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_demo/build/lib/originbot_demo/echo_status.py -> /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_demo/lib/python3.8/site-packages/originbot_demo
+copying /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_demo/build/lib/originbot_demo/transport_img.py -> /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_demo/lib/python3.8/site-packages/originbot_demo
+byte-compiling /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_demo/lib/python3.8/site-packages/originbot_demo/__init__.py to __init__.cpython-38.pyc
+byte-compiling /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_demo/lib/python3.8/site-packages/originbot_demo/control_buzzer.py to control_buzzer.cpython-38.pyc
+byte-compiling /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_demo/lib/python3.8/site-packages/originbot_demo/control_led.py to control_led.cpython-38.pyc
+byte-compiling /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_demo/lib/python3.8/site-packages/originbot_demo/draw_circle.py to draw_circle.cpython-38.pyc
+byte-compiling /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_demo/lib/python3.8/site-packages/originbot_demo/echo_odom.py to echo_odom.cpython-38.pyc
+byte-compiling /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_demo/lib/python3.8/site-packages/originbot_demo/echo_status.py to echo_status.cpython-38.pyc
+byte-compiling /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_demo/lib/python3.8/site-packages/originbot_demo/transport_img.py to transport_img.cpython-38.pyc
+running install_data
+creating /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_demo/share/ament_index
+creating /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_demo/share/ament_index/resource_index
+creating /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_demo/share/ament_index/resource_index/packages
+copying resource/originbot_demo -> /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_demo/share/ament_index/resource_index/packages
+copying package.xml -> /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_demo/share/originbot_demo
+running install_egg_info
+Copying ../../../build/originbot_demo/originbot_demo.egg-info to /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_demo/lib/python3.8/site-packages/originbot_demo-0.0.0-py3.8.egg-info
+running install_scripts
+Installing control_buzzer script to /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_demo/lib/originbot_demo
+Installing control_led script to /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_demo/lib/originbot_demo
+Installing draw_circle script to /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_demo/lib/originbot_demo
+Installing echo_odom script to /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_demo/lib/originbot_demo
+Installing echo_status script to /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_demo/lib/originbot_demo
+Installing transport_img script to /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_demo/lib/originbot_demo
+writing list of installed files to '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_demo/install.log'

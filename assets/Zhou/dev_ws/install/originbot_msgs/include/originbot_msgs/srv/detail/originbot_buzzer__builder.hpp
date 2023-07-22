@@ -1,0 +1,97 @@
+// generated from rosidl_generator_cpp/resource/idl__builder.hpp.em
+// with input from originbot_msgs:srv/OriginbotBuzzer.idl
+// generated code does not contain a copyright notice
+
+#ifndef ORIGINBOT_MSGS__SRV__DETAIL__ORIGINBOT_BUZZER__BUILDER_HPP_
+#define ORIGINBOT_MSGS__SRV__DETAIL__ORIGINBOT_BUZZER__BUILDER_HPP_
+
+#include "originbot_msgs/srv/detail/originbot_buzzer__struct.hpp"
+#include <rosidl_runtime_cpp/message_initialization.hpp>
+#include <algorithm>
+#include <utility>
+
+
+namespace originbot_msgs
+{
+
+namespace srv
+{
+
+namespace builder
+{
+
+class Init_OriginbotBuzzer_Request_on
+{
+public:
+  Init_OriginbotBuzzer_Request_on()
+  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  {}
+  ::originbot_msgs::srv::OriginbotBuzzer_Request on(::originbot_msgs::srv::OriginbotBuzzer_Request::_on_type arg)
+  {
+    msg_.on = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::originbot_msgs::srv::OriginbotBuzzer_Request msg_;
+};
+
+}  // namespace builder
+
+}  // namespace srv
+
+template<typename MessageType>
+auto build();
+
+template<>
+inline
+auto build<::originbot_msgs::srv::OriginbotBuzzer_Request>()
+{
+  return originbot_msgs::srv::builder::Init_OriginbotBuzzer_Request_on();
+}
+
+}  // namespace originbot_msgs
+
+
+namespace originbot_msgs
+{
+
+namespace srv
+{
+
+namespace builder
+{
+
+class Init_OriginbotBuzzer_Response_result
+{
+public:
+  Init_OriginbotBuzzer_Response_result()
+  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  {}
+  ::originbot_msgs::srv::OriginbotBuzzer_Response result(::originbot_msgs::srv::OriginbotBuzzer_Response::_result_type arg)
+  {
+    msg_.result = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::originbot_msgs::srv::OriginbotBuzzer_Response msg_;
+};
+
+}  // namespace builder
+
+}  // namespace srv
+
+template<typename MessageType>
+auto build();
+
+template<>
+inline
+auto build<::originbot_msgs::srv::OriginbotBuzzer_Response>()
+{
+  return originbot_msgs::srv::builder::Init_OriginbotBuzzer_Response_result();
+}
+
+}  // namespace originbot_msgs
+
+#endif  // ORIGINBOT_MSGS__SRV__DETAIL__ORIGINBOT_BUZZER__BUILDER_HPP_

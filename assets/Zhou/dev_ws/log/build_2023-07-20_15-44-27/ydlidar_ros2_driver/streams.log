@@ -1,0 +1,57 @@
+[0.323s] Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake /root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_driver/ydlidar_ros2_driver -DCMAKE_INSTALL_PREFIX=/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/ydlidar_ros2_driver
+[2.961s] -- The C compiler identification is GNU 9.3.0
+[244.318s] -- The CXX compiler identification is GNU 9.3.0
+[244.940s] -- Check for working C compiler: /usr/bin/cc
+[246.552s] -- Check for working C compiler: /usr/bin/cc -- works
+[246.588s] -- Detecting C compiler ABI info
+[247.861s] -- Detecting C compiler ABI info - done
+[248.104s] -- Detecting C compile features
+[248.108s] -- Detecting C compile features - done
+[248.163s] -- Check for working CXX compiler: /usr/bin/c++
+[249.295s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[249.335s] -- Detecting CXX compiler ABI info
+[250.647s] -- Detecting CXX compiler ABI info - done
+[250.987s] -- Detecting CXX compile features
+[250.995s] -- Detecting CXX compile features - done
+[251.073s] -- Found ament_cmake: 0.9.9 (/opt/tros/share/ament_cmake/cmake)
+[251.659s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[251.668s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[257.200s] -- Found rclcpp: 2.4.1 (/opt/tros/share/rclcpp/cmake)
+[258.017s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[258.125s] -- Found rosidl_adapter: 1.2.1 (/opt/tros/share/rosidl_adapter/cmake)
+[258.586s] -- Found FastRTPS: /opt/tros/include  
+[259.610s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[260.965s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/tros/share/rmw_implementation_cmake/cmake)
+[261.018s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[261.039s] -- Looking for pthread.h
+[261.968s] -- Looking for pthread.h - found
+[261.971s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[262.847s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[262.848s] -- Looking for pthread_create in pthreads
+[263.660s] -- Looking for pthread_create in pthreads - not found
+[263.663s] -- Looking for pthread_create in pthread
+[264.924s] -- Looking for pthread_create in pthread - found
+[264.944s] -- Found Threads: TRUE  
+[267.131s] -- Found sensor_msgs: 2.0.5 (/opt/tros/share/sensor_msgs/cmake)
+[270.464s] -- Found visualization_msgs: 2.0.5 (/opt/tros/share/visualization_msgs/cmake)
+[271.803s] -- Found std_srvs: 2.0.5 (/opt/tros/share/std_srvs/cmake)
+[272.190s] -- Found ament_lint_auto: 0.9.6 (/opt/tros/share/ament_lint_auto/cmake)
+[274.283s] -- Added test 'copyright' to check source files copyright and LICENSE
+[274.324s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[274.329s] -- Configured cppcheck include dirs: /root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_driver/ydlidar_ros2_driver/src
+[274.330s] -- Configured cppcheck exclude dirs and/or files: 
+[274.364s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[274.365s] -- Configured cpplint exclude dirs and/or files: 
+[274.384s] -- Added test 'flake8' to check Python code syntax and style conventions
+[274.405s] -- Added test 'lint_cmake' to check CMake code style
+[274.413s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[274.430s] -- Added test 'uncrustify' to check C / C++ code style
+[274.431s] -- Configured uncrustify additional arguments: 
+[274.446s] -- Added test 'xmllint' to check XML markup files
+[274.501s] -- Configuring done
+[274.716s] -- Generating done
+[274.774s] -- Build files have been written to: /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/ydlidar_ros2_driver
+[274.931s] Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake /root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_driver/ydlidar_ros2_driver -DCMAKE_INSTALL_PREFIX=/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/ydlidar_ros2_driver
+[274.953s] Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/userdata/dev_ws/install/originbot_linefollower:/userdata/dev_ws/install/originbot_demo /usr/bin/cmake --build /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/ydlidar_ros2_driver -- -j4 -l4
+[275.462s] [35m[1mScanning dependencies of target ydlidar_ros2_driver_client[0m
+[275.947s] [ 25%] [32mBuilding CXX object CMakeFiles/ydlidar_ros2_driver_client.dir/src/ydlidar_ros2_driver_client.cpp.o[0m

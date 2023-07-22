@@ -1,0 +1,7 @@
+[01m[K/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_deeplearning/line_follower_perception/src/line_follower_perception.cpp:[m[K In member function ‘[01m[Kvirtual int32_t LineCoordinateParser::Parse(std::shared_ptr<LineCoordinateResult>&, std::vector<std::shared_ptr<hobot::easy_dnn::InputDescription> >&, std::shared_ptr<hobot::easy_dnn::OutputDescription>&, std::shared_ptr<hobot::easy_dnn::DNNTensor>&)[m[K’:
+[01m[K/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_deeplearning/line_follower_perception/src/line_follower_perception.cpp:284:53:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kinput_descriptions[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  284 |     [01;35m[Kstd::vector<std::shared_ptr<InputDescription>> &input_descriptions[m[K,
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_deeplearning/line_follower_perception/src/line_follower_perception.cpp:285:41:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Koutput_description[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  285 |     [01;35m[Kstd::shared_ptr<OutputDescription> &output_description[m[K,
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K

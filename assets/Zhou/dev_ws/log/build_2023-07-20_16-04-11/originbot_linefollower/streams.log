@@ -1,0 +1,38 @@
+[10.670s] Invoking command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_linefollower': AMENT_PREFIX_PATH=/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_linefollower/prefix_override:/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_linefollower/lib/python3.8/site-packages:/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/originbot_linefollower build --build-base /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_linefollower/build install --record /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_linefollower/install.log --install-scripts $base/lib/originbot_linefollower --single-version-externally-managed
+[13.378s] running egg_info
+[13.380s] creating ../../../build/originbot_linefollower/originbot_linefollower.egg-info
+[13.382s] writing ../../../build/originbot_linefollower/originbot_linefollower.egg-info/PKG-INFO
+[13.384s] writing dependency_links to ../../../build/originbot_linefollower/originbot_linefollower.egg-info/dependency_links.txt
+[13.386s] writing entry points to ../../../build/originbot_linefollower/originbot_linefollower.egg-info/entry_points.txt
+[13.387s] writing requirements to ../../../build/originbot_linefollower/originbot_linefollower.egg-info/requires.txt
+[13.393s] writing top-level names to ../../../build/originbot_linefollower/originbot_linefollower.egg-info/top_level.txt
+[13.402s] writing manifest file '../../../build/originbot_linefollower/originbot_linefollower.egg-info/SOURCES.txt'
+[13.824s] reading manifest file '../../../build/originbot_linefollower/originbot_linefollower.egg-info/SOURCES.txt'
+[13.830s] writing manifest file '../../../build/originbot_linefollower/originbot_linefollower.egg-info/SOURCES.txt'
+[13.834s] running build
+[13.839s] running build_py
+[13.840s] creating /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_linefollower/build
+[13.846s] creating /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_linefollower/build/lib
+[13.850s] creating /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_linefollower/build/lib/originbot_linefollower
+[13.855s] copying originbot_linefollower/__init__.py -> /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_linefollower/build/lib/originbot_linefollower
+[13.856s] copying originbot_linefollower/follower.py -> /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_linefollower/build/lib/originbot_linefollower
+[13.857s] running install
+[13.858s] running install_lib
+[13.871s] creating /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_linefollower/lib/python3.8/site-packages/originbot_linefollower
+[13.872s] copying /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_linefollower/build/lib/originbot_linefollower/__init__.py -> /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_linefollower/lib/python3.8/site-packages/originbot_linefollower
+[13.879s] copying /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_linefollower/build/lib/originbot_linefollower/follower.py -> /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_linefollower/lib/python3.8/site-packages/originbot_linefollower
+[13.880s] byte-compiling /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_linefollower/lib/python3.8/site-packages/originbot_linefollower/__init__.py to __init__.cpython-38.pyc
+[13.882s] byte-compiling /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_linefollower/lib/python3.8/site-packages/originbot_linefollower/follower.py to follower.cpython-38.pyc
+[13.883s] running install_data
+[13.884s] creating /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_linefollower/share/ament_index
+[13.885s] creating /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_linefollower/share/ament_index/resource_index
+[13.886s] creating /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_linefollower/share/ament_index/resource_index/packages
+[13.895s] copying resource/originbot_linefollower -> /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_linefollower/share/ament_index/resource_index/packages
+[13.896s] copying package.xml -> /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_linefollower/share/originbot_linefollower
+[13.897s] creating /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_linefollower/share/originbot_linefollower/launch
+[13.908s] running install_egg_info
+[13.909s] Copying ../../../build/originbot_linefollower/originbot_linefollower.egg-info to /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_linefollower/lib/python3.8/site-packages/originbot_linefollower-0.0.0-py3.8.egg-info
+[13.910s] running install_scripts
+[14.052s] Installing follower script to /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_linefollower/lib/originbot_linefollower
+[14.053s] writing list of installed files to '/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_linefollower/install.log'
+[14.338s] Invoked command in '/root/fa1k0or.github.io/assets/Zhou/dev_ws/src/originbot/originbot_linefollower' returned '0': AMENT_PREFIX_PATH=/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_linefollower/prefix_override:/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_linefollower/lib/python3.8/site-packages:/root/fa1k0or.github.io/assets/Zhou/dev_ws/install/originbot_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/originbot_linefollower build --build-base /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_linefollower/build install --record /root/fa1k0or.github.io/assets/Zhou/dev_ws/build/originbot_linefollower/install.log --install-scripts $base/lib/originbot_linefollower --single-version-externally-managed

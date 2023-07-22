@@ -1,0 +1,21 @@
+[100%] Built target audio_control
+-- Install configuration: ""
+-- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/lib/audio_control/audio_control
+-- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/audio_control/launch
+-- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/audio_control/launch/hobot_audio_control.launch.py
+-- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/lib/audio_control/README.md
+-- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/ament_index/resource_index/package_run_dependencies/audio_control
+-- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/ament_index/resource_index/parent_prefix_path/audio_control
+-- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/audio_control/environment/ament_prefix_path.sh
+-- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/audio_control/environment/ament_prefix_path.dsv
+-- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/audio_control/environment/path.sh
+-- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/audio_control/environment/path.dsv
+-- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/audio_control/local_setup.bash
+-- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/audio_control/local_setup.sh
+-- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/audio_control/local_setup.zsh
+-- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/audio_control/local_setup.dsv
+-- Installing: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/audio_control/package.dsv
+-- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/ament_index/resource_index/packages/audio_control
+-- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/audio_control/cmake/audio_controlConfig.cmake
+-- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/audio_control/cmake/audio_controlConfig-version.cmake
+-- Up-to-date: /root/fa1k0or.github.io/assets/Zhou/dev_ws/install/audio_control/share/audio_control/package.xml
