@@ -54,6 +54,7 @@ def cleanCoupledData(a,b):
 
 def twocamdis(P1,P2):
     P = cleanCoupledData(P1,P2)
+    return calcDis(P)
 
 def CompleteTwocamdis(hand_landmarks1,hand_landmarks2):
 
@@ -102,11 +103,16 @@ def main():
 
                     if results1.multi_hand_landmarks:
                         if results2.multi_hand_landmarks:
+
+                            print('')
                     
                             for hand_landmarks1 in results1.multi_hand_landmarks:
                                 for hand_landmarks2 in results2.multi_hand_landmarks:
-                                    distance = twocamdis(hand_landmarks1,hand_landmarks2)
+                                    distance = CompleteTwocamdis(hand_landmarks1,hand_landmarks2)
 
                     print("the current distance is ", distance,'m \n')
 
                     cv2.waitKey(10)
+
+if __name__ == '__init__':
+    main()
