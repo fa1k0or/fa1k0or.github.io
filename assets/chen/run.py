@@ -11,6 +11,8 @@ mp_drawing = mp.solutions.drawing_utils
 mp_drawing_styles = mp.solutions.drawing_styles
 mp_hands = mp.solutions.hands
 
+def cognition():
+    cogni.main()
 
 """
 
@@ -58,20 +60,22 @@ def run():
 
                         if results1.multi_hand_landmarks and results2.multi_hand_landmarks:
 
-                                print('hand is found')
+                            print('hand is found')
                     
-                                for hand_landmarks1 in results1.multi_hand_landmarks:
-                                    for hand_landmarks2 in results2.multi_hand_landmarks:
-                                        P1 = cogni.cleanDisDataDict(hand_landmarks1)
-                                        P2 = cogni.cleanDisDataDict(hand_landmarks2)
-                                        print('hand is:')
-                                        print(P1)
-                                        print(P2)
-                                        #if P1[0] and P2[0]:
-                                            #distance = twocamdis.twocamdis(P1,P2)
-                                        distance = twocamdis.CompleteTwocamdis(P1['WristToMiddle'],P2['WristToMiddle'])
-                                        print("the current distance is ", distance,'m \n')
-                                        print(' ')
+                            for hand_landmarks1 in results1.multi_hand_landmarks:
+                                for hand_landmarks2 in results2.multi_hand_landmarks:
+                                    P1 = cogni.cogni(hand_landmarks1)
+                                    P2 = cogni.cogni(hand_landmarks2)
+
+                                    distance = 'na'
+                                    if P1[1] and P2[1]:
+                                    #if P1[0] and P2[0]:
+                                        #distance = twocamdis.twocamdis(P1,P2)
+                                        distance = twocamdis.twocamdis(P1[0],P2[0])
+                                    print("the current distance is ", distance,'m \n')
+                                    print(' ')
+                        else:
+                            print('hand not found')
 
                     else: 
                         print('frame not found')
@@ -79,4 +83,4 @@ def run():
                     cv2.waitKey(30)
 
 if __name__ == '__main__':
-    run()
+    cognition()

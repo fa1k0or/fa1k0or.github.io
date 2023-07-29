@@ -97,9 +97,12 @@ output:
 remarks:
 
 """
-def isHand():                                                                                                                                                                                                                                                                                                                                              
-    print('find hand')
-    return False
+def isHand(data):      
+
+    if float(data['ThumbToIndex']) / float(data['ThumbToMiddle']) < 0.2:
+        return True
+    else:
+        return False
 
 """
 Func: CleanDisData
@@ -296,10 +299,11 @@ output:
 remarks:
     dict 
 """
-def cogni(hand_landmarks):
-    print('WA HO I"M COGNIGING YOU ')
+def cogni(hand_landmarks,width,height):
+    return (cleanDisDataDict(hand_landmarks,width,height)['WristToMiddle'],isHand(cleanDisDataDict(hand_landmarks,width,height)))
 
 def main():
+
     CAM1 = cv2.VideoCapture(0)
     print("Camera Found!")  
 
@@ -338,7 +342,9 @@ def main():
                     
                         for hand_landmarks1 in results1.multi_hand_landmarks:
                             #print('wa ho')
-                            print(cleanDisDataDict(hand_landmarks1,frameWidth,frameHeight))
+                            print(cleanDisDataDict(hand_landmarks1))
+                            print(cogni(hand_landmarks1,frameWidth,frameHeight))                
+
                     else:
                         print('hand not found')
 
@@ -358,7 +364,7 @@ def main():
                     cv2.imshow("screen1", frame1)
                 else:
                     print('frame not found')
-                cv2.waitKey(60)
+                cv2.waitKey(200)
 
 if __name__ == '__main__':
     main()
