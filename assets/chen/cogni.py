@@ -24,16 +24,79 @@ mp_drawing = mp.solutions.drawing_utils
 mp_drawing_styles = mp.solutions.drawing_styles
 mp_hands = mp.solutions.hands
 
-def disformula(a,b): #gets distance between two points
+"""
+Func: disformula
+Author: Jayden Chen
+Purpose: gets the distance between two points
+
+input: 
+    (x,y) * 2
+    
+output:
+    integer
+
+remarks:
+    note 
+"""
+def disformula(a,b): 
 
     return math.sqrt((a[0]-b[0])**2 + (a[1]-b[1])**2 )
 
+"""
+Func: angleformula
+Author: Jayden Chen
+Purpose: gets a point's angles from three coordinates
+
+input: 
+    (x,y) * 3
+    
+output:
+    int
+
+remarks:
+    note that this equation returns in radians, so convert to angle
+"""
 def angleformula(A,B,C): #gets the angle of a point 
     a = disformula(B,C)
     b = disformula(A,C)
     c = disformula(A,B)
     return 180*math.acos((b**2+c**2-a**2)/(2*b*c))/(math.pi)
 
+"""
+Func: radianformula
+Author: Jayden Chen
+Purpose: gets a point's radian from three coordinates
+
+input: 
+    (x,y) * 3
+    
+output:
+    int
+
+remarks:
+
+"""
+def angleformulaRadian(A,B,C): #gets the angle of a point 
+    a = disformula(B,C)
+    b = disformula(A,C)
+    c = disformula(A,B)
+    return math.acos((b**2+c**2-a**2)/(2*b*c))
+
+"""
+Func: isHand
+Author: Jayden Chen
+Purpose: determines if the hand gesture is valid or not
+
+input: 
+    [WristToThumb,WrsitToIndex,WristToMiddle,WristToRing,WristToPinky,ThumbToIndex,ThumbToRing,ThumbToMiddle,ThumbToPinky][ThumbMcp,ThumbIp,IndexPip,IndexDip,MiddlePip,MiddleDip,RingPip,RingDip,PinkyPip,PinkyDip]
+    [WristToThumb,WrsitToIndex,WristToMiddle,WristToRing,WristToPinky,ThumbToIndex,ThumbToRing,ThumbToMiddle,ThumbToPinky][ThumbMcp,ThumbIp,IndexPip,IndexDip,MiddlePip,MiddleDip,RingPip,RingDip,PinkyPip,PinkyDip]
+    
+output:
+    Boolean
+
+remarks:
+
+"""
 def isHand():                                                                                                                                                                                                                                                                                                                                              
     print('find hand')
     return False
@@ -47,86 +110,201 @@ input:
     hand_landmarks
     
 output:
-    WristToThumb,WrsitToIndex,WristToMiddle,WristToRing,WristToPinky,ThumbCmc,ThumbMcp,ThumbIp,IndexPip,IndexDip,MiddlePip,MiddleDip,RingPip,RingDip,PinkyPip,PinkyDip in a list
+    WristToThumb,WrsitToIndex,WristToMiddle,WristToRing,WristToPinky,ThumbToIndex,ThumbToRing,ThumbToMiddle,ThumbToPink,ThumbMcp,ThumbIp,IndexPip,IndexDip,MiddlePip,MiddleDip,RingPip,RingDip,PinkyPip,PinkyDip in a list
 
 remarks:
-
+    note that mediapipe returns a percentage, so you'd have to multiply the percentage by the width and heigh to get accurate measurements
 """
-def cleanDisData(hand_landmarks):
+def cleanDisData(hand_landmarks,width,height):
 
-    #format is [WristToThumb,WrsitToIndex,WristToMiddle,WristToRing,WristToPinky][ThumbCmc,ThumbMcp,ThumbIp,IndexPip,IndexDip,MiddlePip,MiddleDip,RingPip,RingDip,PinkyPip,PinkyDip]
+    #format is [WristToThumb,WrsitToIndex,WristToMiddle,WristToRing,WristToPinky,ThumbToIndex,ThumbToRing,ThumbToMiddle,ThumbToPinky][ThumbMcp,ThumbIp,IndexPip,IndexDip,MiddlePip,MiddleDip,RingPip,RingDip,PinkyPip,PinkyDip]
     return [
 
         #Distance - This gets distance from tips to wrist - for general direction of hand and P1, P2 for twocamdis
          #WristToThumb
-        [round(disformula((hand_landmarks.landmark[mp_hands.HandLandmark.WRIST].x,             hand_landmarks.landmark[mp_hands.HandLandmark.WRIST].y),
-                          (hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_TIP].x,         hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_TIP].y)),2),
+        [round(disformula((hand_landmarks.landmark[mp_hands.HandLandmark.WRIST].x*width,             hand_landmarks.landmark[mp_hands.HandLandmark.WRIST].y*height),
+                          (hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_TIP].x*width,         hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_TIP].y*height)),2),
          #WristToIndex
-         round(disformula((hand_landmarks.landmark[mp_hands.HandLandmark.WRIST].x,             hand_landmarks.landmark[mp_hands.HandLandmark.WRIST].y),
-                          (hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_TIP].x,  hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_TIP].y)),2),
+         round(disformula((hand_landmarks.landmark[mp_hands.HandLandmark.WRIST].x*width,             hand_landmarks.landmark[mp_hands.HandLandmark.WRIST].y*height),
+                          (hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_TIP].x*width,  hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_TIP].y*height)),2),
          #WristToMiddle
-         round(disformula((hand_landmarks.landmark[mp_hands.HandLandmark.WRIST].x,             hand_landmarks.landmark[mp_hands.HandLandmark.WRIST].y),
-                          (hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_TIP].x, hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_TIP].y)),2),
+         round(disformula((hand_landmarks.landmark[mp_hands.HandLandmark.WRIST].x*width,             hand_landmarks.landmark[mp_hands.HandLandmark.WRIST].y*height),
+                          (hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_TIP].x*width, hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_TIP].y)*height),2),
          #WristToRing
-         round(disformula((hand_landmarks.landmark[mp_hands.HandLandmark.WRIST].x,             hand_landmarks.landmark[mp_hands.HandLandmark.WRIST].y),
-                          (hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_TIP].x,   hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_TIP].y)),2),
+         round(disformula((hand_landmarks.landmark[mp_hands.HandLandmark.WRIST].x*width,             hand_landmarks.landmark[mp_hands.HandLandmark.WRIST].y*height),
+                          (hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_TIP].x*width,   hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_TIP].y*height)),2),
          #WristToPinky
-         round(disformula((hand_landmarks.landmark[mp_hands.HandLandmark.WRIST].x,             hand_landmarks.landmark[mp_hands.HandLandmark.WRIST].y),
-                          (hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_TIP].x,         hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_TIP].y)),2)],
+         round(disformula((hand_landmarks.landmark[mp_hands.HandLandmark.WRIST].x*width,             hand_landmarks.landmark[mp_hands.HandLandmark.WRIST].y*height),
+                          (hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_TIP].x*width,         hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_TIP].y*height)),2),
+         #ThumbToIndex                 
+         round(disformula((hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_TIP].x*width,         hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_TIP].y*height),
+                          (hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_TIP].x*width,  hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_TIP].y*height)),2),           
+         #ThumbToMiddle                  
+         round(disformula((hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_TIP].x*width,         hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_TIP].y*height),
+                          (hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_TIP].x*width, hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_TIP].y*height)),2),
+         #ThumbToRing                 
+         round(disformula((hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_TIP].x*width,         hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_TIP].y*height),
+                          (hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_TIP].x*width,   hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_TIP].y*height)),2),
+         #ThumbToPinky                 
+         round(disformula((hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_TIP].x*width,         hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_TIP].y*height),
+                          (hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_TIP].x*width,         hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_TIP].y*height)),2)],
 
         #Angle - This will give the angles of each finger segment - for hand gestures
-         #ThumbCmc
-        [round(angleformula((hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_CMC].x,         hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_CMC].y),
-                            (hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_MCP].x,         hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_MCP].y),
-                            (hand_landmarks.landmark[mp_hands.HandLandmark.WRIST].x,             hand_landmarks.landmark[mp_hands.HandLandmark.WRIST].y)),2),
          #ThumbMcp
-         round(angleformula((hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_MCP].x,         hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_MCP].y),
-                            (hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_IP].x,          hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_IP].y),
-                            (hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_CMC].x,         hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_CMC].y)),2),
+        [round(angleformula((hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_MCP].x*width,         hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_MCP].y*height),
+                            (hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_IP].x*width,          hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_IP].y*height),
+                            (hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_CMC].x*width,         hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_CMC].y*height)),2),
          #ThumbIp
-         round(angleformula((hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_IP].x,          hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_IP].y),
-                            (hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_TIP].x,         hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_TIP].y),
-                            (hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_MCP].x,         hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_MCP].y)),2),
+         round(angleformula((hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_IP].x*width,          hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_IP].y*height),
+                            (hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_TIP].x*width,         hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_TIP].y*height),
+                            (hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_MCP].x*width,         hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_MCP].y*height)),2),
          #IndexPip
-         round(angleformula((hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_PIP].x,  hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_PIP].y),
-                            (hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_DIP].x,  hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_DIP].y),
-                            (hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_MCP].x,  hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_MCP].y)),2),
+         round(angleformula((hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_PIP].x*width,  hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_PIP].y*height),
+                            (hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_DIP].x*width,  hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_DIP].y*height),
+                            (hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_MCP].x*width,  hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_MCP].y*height)),2),
          #IndexDip
-         round(angleformula((hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_DIP].x,  hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_DIP].y),
-                            (hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_TIP].x,  hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_TIP].y),
-                            (hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_PIP].x,  hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_PIP].y)),2),
+         round(angleformula((hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_DIP].x*width,  hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_DIP].y*height),
+                            (hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_TIP].x*width,  hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_TIP].y*height),
+                            (hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_PIP].x*width,  hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_PIP].y*height)),2),
          #MiddlePip
-         round(angleformula((hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_PIP].x, hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_PIP].y),
-                            (hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_DIP].x, hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_DIP].y),
-                            (hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_MCP].x, hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_MCP].y)),2),
+         round(angleformula((hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_PIP].x*width, hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_PIP].y*height),
+                            (hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_DIP].x*width, hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_DIP].y*height),
+                            (hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_MCP].x*width, hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_MCP].y*height)),2),
          #MiddleDip
-         round(angleformula((hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_DIP].x, hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_DIP].y),
-                            (hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_TIP].x, hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_TIP].y),
-                            (hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_PIP].x, hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_PIP].y)),2),
+         round(angleformula((hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_DIP].x*width, hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_DIP].y*height),
+                            (hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_TIP].x*width, hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_TIP].y*height),
+                            (hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_PIP].x*width, hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_PIP].y*height)),2),
          #RingPip
-         round(angleformula((hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_PIP].x,   hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_PIP].y),
-                            (hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_DIP].x,   hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_DIP].y),
-                            (hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_MCP].x,   hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_MCP].y)),2),
+         round(angleformula((hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_PIP].x*width,   hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_PIP].y*height),
+                            (hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_DIP].x*width,   hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_DIP].y*height),
+                            (hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_MCP].x*width,   hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_MCP].y*height)),2),
          #RingDip
-         round(angleformula((hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_DIP].x,   hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_DIP].y),
-                            (hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_TIP].x,   hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_TIP].y),
-                            (hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_PIP].x,   hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_PIP].y)),2),
+         round(angleformula((hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_DIP].x*width,   hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_DIP].y*height),
+                            (hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_TIP].x*width,   hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_TIP].y*height),
+                            (hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_PIP].x*width,   hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_PIP].y*height)),2),
          #PinkyPip
-         round(angleformula((hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_PIP].x,        hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_PIP].y),
-                            (hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_DIP].x,        hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_DIP].y),
-                            (hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_MCP].x,        hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_MCP].y)),2),
+         round(angleformula((hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_PIP].x*width,         hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_PIP].y*height),
+                            (hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_DIP].x*width,         hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_DIP].y*height),
+                            (hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_MCP].x*width,         hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_MCP].y*height)),2),
          #PinkyPip
-         round(angleformula((hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_DIP].x,        hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_DIP].y),
-                            (hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_TIP].x,        hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_TIP].y),
-                            (hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_PIP].x,        hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_PIP].y)),2)
+         round(angleformula((hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_DIP].x*width,         hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_DIP].y*height),
+                            (hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_TIP].x*width,         hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_TIP].y*height),
+                            (hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_PIP].x*width,         hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_PIP].y*height)),2)
         ]]
 
+"""
+Func: CleanDisDataDict
+Author: Jayden Chen
+Purpose: Translate handmarks into angle and distance data for cognition
+
+input: 
+    hand_landmarks
+    
+output:
+    WristToThumb,WrsitToIndex,WristToMiddle,WristToRing,WristToPinky,ThumbToIndex,ThumbToRing,ThumbToMiddle,ThumbToPink,ThumbMcp,ThumbIp,IndexPip,IndexDip,MiddlePip,MiddleDip,RingPip,RingDip,PinkyPip,PinkyDip in a dict
+
+remarks:
+    dict 
+"""
+def cleanDisDataDict(hand_landmarks,width,height):
+
+    #format is [WristToThumb,WrsitToIndex,WristToMiddle,WristToRing,WristToPinky,ThumbToIndex,ThumbToRing,ThumbToMiddle,ThumbToPinky][ThumbMcp,ThumbIp,IndexPip,IndexDip,MiddlePip,MiddleDip,RingPip,RingDip,PinkyPip,PinkyDip]
+    return {
+
+        #Distance - This gets distance from tips to wrist - for general direction of hand and P1, P2 for twocamdis
+         #WristToThumb
+         'WristToThumb'  : round(disformula((hand_landmarks.landmark[mp_hands.HandLandmark.WRIST].x*width,             hand_landmarks.landmark[mp_hands.HandLandmark.WRIST].y*height),
+                                            (hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_TIP].x*width,         hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_TIP].y*height)),2),
+         #WristToIndex
+         'WristToIndex'  : round(disformula((hand_landmarks.landmark[mp_hands.HandLandmark.WRIST].x*width,             hand_landmarks.landmark[mp_hands.HandLandmark.WRIST].y*height),
+                                            (hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_TIP].x*width,  hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_TIP].y*height)),2),
+         #WristToMiddle
+         'WristToMiddle' : round(disformula((hand_landmarks.landmark[mp_hands.HandLandmark.WRIST].x*width,             hand_landmarks.landmark[mp_hands.HandLandmark.WRIST].y*height),
+                                            (hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_TIP].x*width, hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_TIP].y)*height),2),
+         #WristToRing
+         'WristToRing'   : round(disformula((hand_landmarks.landmark[mp_hands.HandLandmark.WRIST].x*width,             hand_landmarks.landmark[mp_hands.HandLandmark.WRIST].y*height),
+                                            (hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_TIP].x*width,   hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_TIP].y*height)),2),
+         #WristToPinky
+         'WristToPinky'  : round(disformula((hand_landmarks.landmark[mp_hands.HandLandmark.WRIST].x*width,             hand_landmarks.landmark[mp_hands.HandLandmark.WRIST].y*height),
+                                            (hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_TIP].x*width,         hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_TIP].y*height)),2),
+         #ThumbToIndex                 
+         'ThumbToIndex'  : round(disformula((hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_TIP].x*width,         hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_TIP].y*height),
+                                            (hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_TIP].x*width,  hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_TIP].y*height)),2),           
+         #ThumbToMiddle                  
+         'ThumbToMiddle' : round(disformula((hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_TIP].x*width,         hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_TIP].y*height),
+                                            (hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_TIP].x*width, hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_TIP].y*height)),2),
+         #ThumbToRing                 
+         'ThumbToRing'   : round(disformula((hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_TIP].x*width,         hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_TIP].y*height),
+                                            (hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_TIP].x*width,   hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_TIP].y*height)),2),
+         #ThumbToPinky                 
+         'ThumbToPinky'  : round(disformula((hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_TIP].x*width,         hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_TIP].y*height),
+                                            (hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_TIP].x*width,         hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_TIP].y*height)),2),
+
+        #Angle - This will give the angles of each finger segment - for hand gestures
+         #ThumbMcp
+         'ThumbMcp' : round(angleformula((hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_MCP].x*width,         hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_MCP].y*height),
+                                         (hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_IP].x*width,          hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_IP].y*height),
+                                         (hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_CMC].x*width,         hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_CMC].y*height)),2),
+         #ThumbIp
+         'ThumbIp'  : round(angleformula((hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_IP].x*width,          hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_IP].y*height),
+                                         (hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_TIP].x*width,         hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_TIP].y*height),
+                                         (hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_MCP].x*width,         hand_landmarks.landmark[mp_hands.HandLandmark.THUMB_MCP].y*height)),2),
+         #IndexPip
+         'IndexPip' : round(angleformula((hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_PIP].x*width,  hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_PIP].y*height),
+                                         (hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_DIP].x*width,  hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_DIP].y*height),
+                                         (hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_MCP].x*width,  hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_MCP].y*height)),2),
+         #IndexDip
+         'IndexDip' : round(angleformula((hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_DIP].x*width,  hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_DIP].y*height),
+                                         (hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_TIP].x*width,  hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_TIP].y*height),
+                                         (hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_PIP].x*width,  hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_PIP].y*height)),2),
+         #MiddlePip
+         'MiddlePip': round(angleformula((hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_PIP].x*width, hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_PIP].y*height),
+                                         (hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_DIP].x*width, hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_DIP].y*height),
+                                         (hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_MCP].x*width, hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_MCP].y*height)),2),
+         #MiddleDip
+         'MiddleDip': round(angleformula((hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_DIP].x*width, hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_DIP].y*height),
+                                         (hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_TIP].x*width, hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_TIP].y*height),
+                                         (hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_PIP].x*width, hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_PIP].y*height)),2),
+         #RingPip
+         'RingPip'  : round(angleformula((hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_PIP].x*width,   hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_PIP].y*height),
+                                         (hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_DIP].x*width,   hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_DIP].y*height),
+                                         (hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_MCP].x*width,   hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_MCP].y*height)),2),
+         #RingDip
+         'RingDip'  : round(angleformula((hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_DIP].x*width,   hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_DIP].y*height),
+                                         (hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_TIP].x*width,   hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_TIP].y*height),
+                                         (hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_PIP].x*width,   hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_PIP].y*height)),2),
+         #PinkyPip
+         'PinkyPip' : round(angleformula((hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_PIP].x*width,         hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_PIP].y*height),
+                                         (hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_DIP].x*width,         hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_DIP].y*height),
+                                         (hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_MCP].x*width,         hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_MCP].y*height)),2),
+         #PinkyDip
+         'PinkyDip' : round(angleformula((hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_DIP].x*width,         hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_DIP].y*height),
+                                         (hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_TIP].x*width,         hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_TIP].y*height),
+                                         (hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_PIP].x*width,         hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_PIP].y*height)),2)}
+
+"""
+Func: CleanDisDataDict
+Author: Jayden Chen
+Purpose: Translate handmarks into angle and distance data for cognition
+
+input: 
+    hand_landmarks
+    
+output:
+    WristToThumb,WrsitToIndex,WristToMiddle,WristToRing,WristToPinky,ThumbToIndex,ThumbToRing,ThumbToMiddle,ThumbToPink,ThumbMcp,ThumbIp,IndexPip,IndexDip,MiddlePip,MiddleDip,RingPip,RingDip,PinkyPip,PinkyDip in a dict
+
+remarks:
+    dict 
+"""
 def cogni(hand_landmarks):
     print('WA HO I"M COGNIGING YOU ')
 
 def main():
     CAM1 = cv2.VideoCapture(0)
     print("Camera Found!")  
+
+    frameWidth = int(CAM1.get(cv2.CAP_PROP_FRAME_WIDTH))
+    frameHeight = int(CAM1.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
     #wait a while
     cv2.waitKey(1000)
@@ -140,7 +318,6 @@ def main():
             min_tracking_confidence=0.5) as hands:
                 
             print("Mediapipe Running!")
-
 
             cv2.waitKey(1000)
             while True:
@@ -161,7 +338,7 @@ def main():
                     
                         for hand_landmarks1 in results1.multi_hand_landmarks:
                             #print('wa ho')
-                            print(cleanDisData(hand_landmarks1))
+                            print(cleanDisDataDict(hand_landmarks1,frameWidth,frameHeight))
                     else:
                         print('hand not found')
 
@@ -184,5 +361,4 @@ def main():
                 cv2.waitKey(60)
 
 if __name__ == '__main__':
-    print(angleformula((0,0),(0,1),(1,0)))
     main()

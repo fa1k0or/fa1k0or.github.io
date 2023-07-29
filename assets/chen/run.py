@@ -22,6 +22,9 @@ def run():
     CAM2 = cv2.VideoCapture(2)
     print("Camera Found!")  
 
+    frameWidth = int(CAM1.get(cv2.CAP_PROP_FRAME_WIDTH))
+    frameHeight = int(CAM1.get(cv2.CAP_PROP_FRAME_HEIGHT))
+
     #wait a while
     cv2.waitKey(1000)
  
@@ -59,12 +62,16 @@ def run():
                     
                                 for hand_landmarks1 in results1.multi_hand_landmarks:
                                     for hand_landmarks2 in results2.multi_hand_landmarks:
-                                        #P1 = cogni(hand_landmarks1)
-                                        #P2 = cogni(hand_landmarks2)
+                                        P1 = cogni.cleanDisDataDict(hand_landmarks1)
+                                        P2 = cogni.cleanDisDataDict(hand_landmarks2)
+                                        print('hand is:')
+                                        print(P1)
+                                        print(P2)
                                         #if P1[0] and P2[0]:
                                             #distance = twocamdis.twocamdis(P1,P2)
-                                        distance = twocamdis.CompleteTwocamdis(hand_landmarks1,hand_landmarks2)
+                                        distance = twocamdis.CompleteTwocamdis(P1['WristToMiddle'],P2['WristToMiddle'])
                                         print("the current distance is ", distance,'m \n')
+                                        print(' ')
 
                     print('frame not found')
                     cv2.waitKey(30)

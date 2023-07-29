@@ -41,12 +41,12 @@ def calcDis(P):
 
     return round(L*(a/(P-b) - c),2)
 
-def cleanSingleData(hand_landmarks):
+def cleanSingleData(hand_landmarks,width,height):
             
-    return disformula([[hand_landmarks.landmark[mp_hands.HandLandmark.WRIST].x,
-                             hand_landmarks.landmark[mp_hands.HandLandmark.WRIST].y,],        
-                            [hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_TIP].x,
-                             hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_TIP].y,]]) 
+    return disformula(((hand_landmarks.landmark[mp_hands.HandLandmark.WRIST].x*width,
+                        hand_landmarks.landmark[mp_hands.HandLandmark.WRIST].y*height),        
+                       (hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_TIP].x*width,
+                        hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_TIP].y*height))) 
 
 def cleanCoupledData(a,b):
 
@@ -56,10 +56,10 @@ def twocamdis(P1,P2):
     P = cleanCoupledData(P1,P2)
     return calcDis(P)
 
-def CompleteTwocamdis(hand_landmarks1,hand_landmarks2):
+def CompleteTwocamdis(hand_landmarks1,hand_landmarks2,width,height):
 
-    P1 = cleanSingleData(hand_landmarks1)
-    P2 = cleanSingleData(hand_landmarks2)
+    P1 = cleanSingleData(hand_landmarks1,width,height)
+    P2 = cleanSingleData(hand_landmarks2,width,height)
 
     P = cleanCoupledData(P1,P2)
 
