@@ -113,4 +113,4 @@ def run():
                     cv2.waitKey(30)
 
 if __name__ == '__main__':
-    cognition()
+    run()
