@@ -29,8 +29,9 @@ def run():
     cv2.waitKey(1000)
  
     if CAM1.isOpened():
+        print("Camera 1 Open!")
         if CAM2.isOpened():
-            print("Camera Open!")
+            print("Cameras Open!")
 
             with mp_hands.Hands(
                 model_complexity=0,
@@ -55,8 +56,7 @@ def run():
                         frame2 = cv2.cvtColor(frame2,cv2.COLOR_BGR2RGB)
                         results2 = hands.process(frame2)
 
-                        if results1.multi_hand_landmarks:
-                            if results2.multi_hand_landmarks:
+                        if results1.multi_hand_landmarks and results2.multi_hand_landmarks:
 
                                 print('hand is found')
                     
@@ -73,7 +73,9 @@ def run():
                                         print("the current distance is ", distance,'m \n')
                                         print(' ')
 
-                    print('frame not found')
+                    else: 
+                        print('frame not found')
+
                     cv2.waitKey(30)
 
 if __name__ == '__main__':
