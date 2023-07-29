@@ -77,6 +77,36 @@ def run():
                         else:
                             print('hand not found')
 
+                        frame1.flags.writeable = True
+                        frame1 = cv2.cvtColor(frame1,cv2.COLOR_RGB2BGR)
+
+                        if results1.multi_hand_landmarks:
+                            for hand_landmarks in results1.multi_hand_landmarks:
+                                mp_drawing.draw_landmarks(
+                                frame1,
+                                hand_landmarks,
+                                mp_hands.HAND_CONNECTIONS,
+                                mp_drawing_styles.get_default_hand_landmarks_style(),
+                                mp_drawing_styles.get_default_hand_connections_style())
+                
+                        #cv2.imshow("screen0", frame0) #show frame
+                        cv2.imshow("screen1", frame1)
+
+                        frame2.flags.writeable = True
+                        frame2 = cv2.cvtColor(frame2,cv2.COLOR_RGB2BGR)
+
+                        if results2.multi_hand_landmarks:
+                            for hand_landmarks in results2.multi_hand_landmarks:
+                                mp_drawing.draw_landmarks(
+                                frame2,
+                                hand_landmarks,
+                                mp_hands.HAND_CONNECTIONS,
+                                mp_drawing_styles.get_default_hand_landmarks_style(),
+                                mp_drawing_styles.get_default_hand_connections_style())
+                
+                        #cv2.imshow("screen0", frame0) #show frame
+                        cv2.imshow("screen2", frame2)
+
                     else: 
                         print('frame not found')
 
