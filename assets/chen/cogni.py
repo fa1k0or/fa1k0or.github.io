@@ -76,9 +76,11 @@ output:
 remarks:
 
 """
-def angleformulaRadian(A,B,C): #gets the angle of a point 
+
+def angleformulaRadian(A,B,C): 
+
     a = disformula(B,C)
-    b = disformula(A,C)
+    b = disformula(A,C) 
     c = disformula(A,B)
     return math.acos((b**2+c**2-a**2)/(2*b*c))
 
@@ -89,8 +91,7 @@ Purpose: determines if the hand gesture is valid or not
 
 input: 
     [WristToThumb,WrsitToIndex,WristToMiddle,WristToRing,WristToPinky,ThumbToIndex,ThumbToRing,ThumbToMiddle,ThumbToPinky][ThumbMcp,ThumbIp,IndexPip,IndexDip,MiddlePip,MiddleDip,RingPip,RingDip,PinkyPip,PinkyDip]
-    [WristToThumb,WrsitToIndex,WristToMiddle,WristToRing,WristToPinky,ThumbToIndex,ThumbToRing,ThumbToMiddle,ThumbToPinky][ThumbMcp,ThumbIp,IndexPip,IndexDip,MiddlePip,MiddleDip,RingPip,RingDip,PinkyPip,PinkyDip]
-    
+
 output:
     Boolean
 
@@ -289,6 +290,7 @@ def cleanDisDataDict(hand_landmarks,width,height):
 Func: CleanDisDataDict
 Author: Jayden Chen
 Purpose: Translate handmarks into angle and distance data for cognition
+         Formatted for TwoCamDis
 
 input: 
     hand_landmarks
@@ -304,9 +306,13 @@ def cogni(hand_landmarks,width,height):
 
 def main():
 
+    #test camera number before start
     CAM1 = cv2.VideoCapture(0)
+    #change video format for better performance in raspberry pi
+    CAM1.set(cv2.CAP_PROP_FOURCC,cv2.VideoWriter_fourcc('M','J','P','G'))
     print("Camera Found!")  
 
+    #get Width and Height for 
     frameWidth = int(CAM1.get(cv2.CAP_PROP_FRAME_WIDTH))
     frameHeight = int(CAM1.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
@@ -323,12 +329,15 @@ def main():
                 
             print("Mediapipe Running!")
 
+            #wait a while
             cv2.waitKey(1000)
+
             while True:
 
                 #get frame and success
                 read_code1, frame1 = CAM1.read()
 
+                #if Frame is successful
                 if read_code1:
 
                     # To improve performance, mark frames as not writeable to pass by reference
@@ -336,23 +345,31 @@ def main():
                     frame1 = cv2.cvtColor(frame1,cv2.COLOR_BGR2RGB)
                     results1 = hands.process(frame1)
 
+                    #if mediapipe is successful
                     if results1.multi_hand_landmarks:
 
                         print('hand is found')
-                    
+
+                        handnum = 0
+                        #for all hands detected
                         for hand_landmarks1 in results1.multi_hand_landmarks:
                             #print('wa ho')
-                            print(cleanDisDataDict(hand_landmarks1))
+                            handnum += 1
+                            print(cleanDisDataDict(hand_landmarks1,frameWidth,frameHeight))
                             print(cogni(hand_landmarks1,frameWidth,frameHeight))                
 
                     else:
                         print('hand not found')
 
+                    #mark frames as writeable for visual
                     frame1.flags.writeable = True
                     frame1 = cv2.cvtColor(frame1,cv2.COLOR_RGB2BGR)
 
+                    #if mediapipe is successful
                     if results1.multi_hand_landmarks:
+                        #for hands detected
                         for hand_landmarks in results1.multi_hand_landmarks:
+                            #draw hand landmarks on image
                             mp_drawing.draw_landmarks(
                             frame1,
                             hand_landmarks,
@@ -360,11 +377,19 @@ def main():
                             mp_drawing_styles.get_default_hand_landmarks_style(),
                             mp_drawing_styles.get_default_hand_connections_style())
                 
-                    #cv2.imshow("screen0", frame0) #show frame
+                    #cv2.imshow("screen0", frame0) 
+                    #show visual
                     cv2.imshow("screen1", frame1)
                 else:
                     print('frame not found')
-                cv2.waitKey(200)
+
+                #if esc key is pressed, break
+                if cv2.waitKey(33) == 27:
+                        break
+                
+    #close camera and window for 'eleganto' ending
+    CAM1.release()
+    cv2.destroyAllWindows
 
 if __name__ == '__main__':
     main()

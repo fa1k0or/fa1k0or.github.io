@@ -11,8 +11,23 @@ mp_drawing = mp.solutions.drawing_utils
 mp_drawing_styles = mp.solutions.drawing_styles
 mp_hands = mp.solutions.hands
 
+#initialize visual
 def cognition():
     cogni.main()
+
+def visualizeDis(distance):
+
+    if distance != 'na':
+    
+        img=cv2.imread('canvas.jpg')
+        x = 140 + 120*int(distance)
+        cv2.circle(img,(425,x),20,(255,0,255))
+        cv2.imshow('canvas',img)
+        cv2.waitKey(50)
+
+def cameraTest():
+    for i in range(100):
+        CAM1 = cv2.VideoCapture(i)
 
 """
 
@@ -21,7 +36,9 @@ def cognition():
 def run():
 
     CAM1 = cv2.VideoCapture(0)
+    CAM1.set(cv2.CAP_PROP_FOURCC,cv2.VideoWriter_fourcc('M','J','P','G'))
     CAM2 = cv2.VideoCapture(2)
+    CAM2.set(cv2.CAP_PROP_FOURCC,cv2.VideoWriter_fourcc('M','J','P','G'))
     print("Camera Found!")  
 
     frameWidth = int(CAM1.get(cv2.CAP_PROP_FRAME_WIDTH))
@@ -64,8 +81,9 @@ def run():
                     
                             for hand_landmarks1 in results1.multi_hand_landmarks:
                                 for hand_landmarks2 in results2.multi_hand_landmarks:
-                                    P1 = cogni.cogni(hand_landmarks1)
-                                    P2 = cogni.cogni(hand_landmarks2)
+                                    P1 = cogni.cogni(hand_landmarks1,frameWidth,frameHeight)
+                                    P2 = cogni.cogni(hand_landmarks2,frameWidth,frameHeight)
+                                    print(P1,P2)
 
                                     distance = 'na'
                                     if P1[1] and P2[1]:
@@ -74,6 +92,7 @@ def run():
                                         distance = twocamdis.twocamdis(P1[0],P2[0])
                                     print("the current distance is ", distance,'m \n')
                                     print(' ')
+                                    visualizeDis(distance)
                         else:
                             print('hand not found')
 
@@ -110,7 +129,23 @@ def run():
                     else: 
                         print('frame not found')
 
-                    cv2.waitKey(30)
+                    if cv2.waitKey(100) == 27:
+                        break
+    CAM1.release()
+    CAM2.release()
+    cv2.destroyAllWindows
+
 
 if __name__ == '__main__':
-    run()
+    x = input('insert func')
+    if 'run' in x:
+        print('running run()')
+        run()
+    elif 'cognition' in x:
+        print('running cognition')
+        cognition()
+    elif 'cameraTest' in x:
+        print('running cameraTest')
+        cameraTest()
+    else:
+        print('do that again plz')
