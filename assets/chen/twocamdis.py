@@ -89,14 +89,14 @@ def gradient_descent(a_now, b_now,c_now, L, points, learningrate):
 a = 0.8
 b = 0
 c = 1 
-L = 0.83
+L = 1
 epochs = 1000
 
 def calcRegression(R):
 
-    plotRange = (20
-                ,80
-                 )
+    plotRange = (20,
+                 80
+                )
     data = pd.read_csv('data.csv')
 
     for i in range(epochs):
@@ -126,9 +126,9 @@ def calcDis(P):
     #1/(P - 1) = (x + 1)/1
     #x = 1 / (P-1) -1
 
-    L = 0.83 #this is the distance between the two cameras in meters
+    #this is the distance between the two cameras in meters
 
-    return round(L*(a/(P-b) - c),2) #the a, b, c values are calculated by calcRegression
+    return round(L*(a/(P-b) + c),2) #the a, b, c values are calculated by calcRegression
 
 """
 Func: cleanSingleData
@@ -163,7 +163,7 @@ remarks:
 """
 def cleanCoupledData(a,b):
 
-    return a/b
+    return b/a
 
 """
 Func: twocamdis

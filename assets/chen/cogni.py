@@ -286,23 +286,29 @@ def cleanDisDataDict(hand_landmarks,width,height):
                                          (hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_TIP].x*width,         hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_TIP].y*height),
                                          (hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_PIP].x*width,         hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_PIP].y*height)),2)}
 
+def cleanSideData(hand_landmarks,width):
+
+    return {
+        'X-Axis' : round((hand_landmarks.landmark[mp_hands.HandLandmark.WRIST].x*width),2)
+    }
+
 """
-Func: CleanDisDataDict
+Func: cogni
 Author: Jayden Chen
-Purpose: Translate handmarks into angle and distance data for cognition
+Purpose: Returns if hand gesture is recognized
          Formatted for TwoCamDis
 
 input: 
-    hand_landmarks
+    hand_landmarks, width, height
     
 output:
-    WristToThumb,WrsitToIndex,WristToMiddle,WristToRing,WristToPinky,ThumbToIndex,ThumbToRing,ThumbToMiddle,ThumbToPink,ThumbMcp,ThumbIp,IndexPip,IndexDip,MiddlePip,MiddleDip,RingPip,RingDip,PinkyPip,PinkyDip in a dict
+    float, boolean, float
 
 remarks:
-    dict 
+    
 """
 def cogni(hand_landmarks,width,height):
-    return (cleanDisDataDict(hand_landmarks,width,height)['WristToMiddle'],isHand(cleanDisDataDict(hand_landmarks,width,height)))
+    return (cleanDisDataDict(hand_landmarks,width,height)['WristToMiddle'],isHand(cleanDisDataDict(hand_landmarks,width,height)),cleanSideData(hand_landmarks,width)['X-Axis'])
 
 def main():
 
@@ -356,6 +362,7 @@ def main():
                             #print('wa ho')
                             handnum += 1
                             print(cleanDisDataDict(hand_landmarks1,frameWidth,frameHeight))
+                            print(cleanSideData(hand_landmarks1,frameWidth))
                             print(cogni(hand_landmarks1,frameWidth,frameHeight))                
 
                     else:

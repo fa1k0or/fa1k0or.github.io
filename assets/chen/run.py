@@ -11,23 +11,33 @@ mp_drawing = mp.solutions.drawing_utils
 mp_drawing_styles = mp.solutions.drawing_styles
 mp_hands = mp.solutions.hands
 
+img=cv2.imread('canvas.jpg')
+imgorg=img.copy()
+
 #initialize visual
 def cognition():
     cogni.main()
 
-def visualizeDis(distance):
+def visualizeDis():
 
-    if distance != 'na':
-    
-        img=cv2.imread('canvas.jpg')
-        x = 140 + 120*int(distance)
-        cv2.circle(img,(425,x),20,(255,0,255))
+    while True:
+        distance1 = input('distance [x]')
+        distance2 = input('distance [y]')
+        img = imgorg.copy()
+
+        x = int(140 + 120 * float(distance1))
+        y = int(425 + 120 * float(distance2))
+        cv2.circle(img,(y,x),20,(255,0,255))
         cv2.imshow('canvas',img)
-        cv2.waitKey(50)
+        cv2.waitKey(10)
+
 
 def cameraTest():
     for i in range(100):
         CAM1 = cv2.VideoCapture(i)
+        print(i)
+
+
 
 """
 
@@ -35,23 +45,27 @@ def cameraTest():
 """
 def run():
 
+    #gets camera and sets format to mjpg for better performance (or else pi memory fails)
     CAM1 = cv2.VideoCapture(0)
     CAM1.set(cv2.CAP_PROP_FOURCC,cv2.VideoWriter_fourcc('M','J','P','G'))
     CAM2 = cv2.VideoCapture(2)
     CAM2.set(cv2.CAP_PROP_FOURCC,cv2.VideoWriter_fourcc('M','J','P','G'))
     print("Camera Found!")  
 
+    #gets frame width and height for cogni
     frameWidth = int(CAM1.get(cv2.CAP_PROP_FRAME_WIDTH))
     frameHeight = int(CAM1.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
     #wait a while
     cv2.waitKey(1000)
  
+    #see if cam is open or  not
     if CAM1.isOpened():
         print("Camera 1 Open!")
         if CAM2.isOpened():
             print("Cameras Open!")
 
+            #using mediapipe hands
             with mp_hands.Hands(
                 model_complexity=0,
                 min_detection_confidence=0.5,
@@ -59,15 +73,18 @@ def run():
                 
                 print("Mediapipe Running!")
 
+                #dead loop (press esc key on window if want to close)
                 while True:
 
                     #get frame and success
                     read_code1, frame1 = CAM1.read()
                     read_code2, frame2 = CAM2.read()
 
+                    #if both cameras are successful
                     if read_code1 and read_code2:
 
-                    # To improve performance, mark frames as not writeable to pass by reference
+                        #Get hand tracking results from mediapipe
+                        #To improve performance, mark frames as not writeable to pass by reference
                         frame1.flags.writeable = False
                         frame1 = cv2.cvtColor(frame1,cv2.COLOR_BGR2RGB)
                         results1 = hands.process(frame1)
@@ -75,24 +92,35 @@ def run():
                         frame2 = cv2.cvtColor(frame2,cv2.COLOR_BGR2RGB)
                         results2 = hands.process(frame2)
 
+                        #if results are successful
                         if results1.multi_hand_landmarks and results2.multi_hand_landmarks:
 
                             print('hand is found')
                     
+
                             for hand_landmarks1 in results1.multi_hand_landmarks:
                                 for hand_landmarks2 in results2.multi_hand_landmarks:
                                     P1 = cogni.cogni(hand_landmarks1,frameWidth,frameHeight)
                                     P2 = cogni.cogni(hand_landmarks2,frameWidth,frameHeight)
                                     print(P1,P2)
 
-                                    distance = 'na'
-                                    if P1[1] and P2[1]:
+                                    distance1 = 'na'
+                                    if P1[1]:
                                     #if P1[0] and P2[0]:
                                         #distance = twocamdis.twocamdis(P1,P2)
-                                        distance = twocamdis.twocamdis(P1[0],P2[0])
-                                    print("the current distance is ", distance,'m \n')
+                                        distance1 = twocamdis.twocamdis(P1[0],P2[0])
+                                    print("the current distance is ", distance1,'m \n')
                                     print(' ')
-                                    visualizeDis(distance)
+
+                                    distance2 = P2[2] - 360
+                                    
+                                    img = imgorg.copy()
+
+                                    x = int(140 + 120 * float(distance1))
+                                    y = int(425 + int(distance2))
+                                    cv2.circle(img,(y,x),20,(255,0,255))
+                                    cv2.imshow('canvas',img)
+                                    cv2.waitKey(30)
                         else:
                             print('hand not found')
 
@@ -109,7 +137,6 @@ def run():
                                 mp_drawing_styles.get_default_hand_connections_style())
                 
                         #cv2.imshow("screen0", frame0) #show frame
-                        cv2.imshow("screen1", frame1)
 
                         frame2.flags.writeable = True
                         frame2 = cv2.cvtColor(frame2,cv2.COLOR_RGB2BGR)
@@ -125,18 +152,18 @@ def run():
                 
                         #cv2.imshow("screen0", frame0) #show frame
                         cv2.imshow("screen2", frame2)
+                        cv2.imshow("screen1", frame1)
 
                     else: 
                         print('frame not found')
 
-                    if cv2.waitKey(100) == 27:
+                    if cv2.waitKey(30) == 27:
                         break
     CAM1.release()
     CAM2.release()
     cv2.destroyAllWindows
 
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     x = input('insert func')
     if 'run' in x:
         print('running run()')
@@ -147,5 +174,7 @@ if __name__ == '__main__':
     elif 'cameraTest' in x:
         print('running cameraTest')
         cameraTest()
+    elif 'visualizeDis' in x:
+        visualizeDis()
     else:
         print('do that again plz')
