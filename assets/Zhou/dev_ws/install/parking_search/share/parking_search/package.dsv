@@ -1,8 +1,0 @@
-source;share/parking_search/hook/cmake_prefix_path.ps1
-source;share/parking_search/hook/cmake_prefix_path.dsv
-source;share/parking_search/hook/cmake_prefix_path.sh
-source;share/parking_search/local_setup.bash
-source;share/parking_search/local_setup.dsv
-source;share/parking_search/local_setup.ps1
-source;share/parking_search/local_setup.sh
-source;share/parking_search/local_setup.zsh
