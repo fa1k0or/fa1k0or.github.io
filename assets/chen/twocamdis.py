@@ -10,13 +10,18 @@ output:
     distance in meters
 
 """
-
 import math
 import mediapipe as mp
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
+from mediapipe.tasks import python
+from mediapipe.tasks.python import vision
+
+from obj import visualizeObject
+from obj import ObjProperties
+from obj import cleanSuitcaseData
 
 #initialize mediapip hands 
 mp_drawing = mp.solutions.drawing_utils
@@ -42,6 +47,61 @@ def disformula(a,b): #gets distance between two points
     return math.sqrt((a[0]-b[0])**2 + (a[1]-b[1])**2 )
 
 """
+Func: pythagorean
+Author: Jayden Chen
+Purpose: finds the hypo using the pythagorean theorem
+
+input: 
+    width, height (int)
+    
+output:
+    integer
+
+remarks:
+"""
+def pythagorean(a,b):
+
+    return round(math.sqrt(int(a)**2 + int(b)**2),2)
+
+"""
+Func: visualize distance
+Author: Jayden Chen
+Purpose: 
+input: 
+    
+output:
+
+remarks:
+"""
+img=cv2.imread('canvas.jpg')
+imgorg=img.copy()
+
+
+
+"""
+Func: disrtance formula values
+Author: Jayden Chen
+Purpose: 
+
+remarks:
+"""
+#test data 
+#1m: 2.04 1.93 1.92 avg1.95
+#1.25m: 1.82 1.86 avg1.85
+#1.5m: 1.65 1.65, 1.68, 1.5 avg1.65
+#1.75m: 1.5 1.51 1.41 avg1.5
+#2m: 1.35 1.39 avg1.35
+
+#P = b + a/(x*d + c)
+
+#values for distance formula
+a = 1 
+b = 1 #this value does not change unless camera issues
+c = 0.05
+d = 1
+L = 1 #horizontal distance between cmameras in meters
+
+"""
 Func: calcRegression
 Author: Jayden Chen
 Purpose: based on the data given, change the values of a,b,c in L*(a/(P-b) - c)
@@ -50,9 +110,10 @@ input: data.csv
     
 output: 
 
-remarks:
-    need to learn this
+remarks: don't know if it works or not. bad at math(s)
+
 """
+
 
 #distance = L * (a / (P-b) -c)
 
@@ -86,10 +147,6 @@ def gradient_descent(a_now, b_now,c_now, L, points, learningrate):
 
     return a,b,c
 
-a = 0.8
-b = 0
-c = 1 
-L = 1
 epochs = 1000
 
 def calcRegression(R):
@@ -107,10 +164,11 @@ def calcRegression(R):
     plt.scatter(data.x,data.y, color = 'black')
     plt.plot(list(range(plotRange[0],plotRange[1])),[L*a/(x-b)-c for x in range(plotRange[0],plotRange[1])],color = 'blue')
 
+
 """
 Func: calcDis 
 Author: Jayden Chen
-Purpose: calculates the distance based on the equation: P = 1 + 1/(x+1)
+Purpose: calculates the distance based on the equation: 
 
 input: P (the ratio of P1 and P2)
     
@@ -121,15 +179,15 @@ remarks:
 
 """
 def calcDis(P):
-    #P = 1 + 1/(x + 1)
-    #P - 1 = 1/(x + 1)
-    #1/(P - 1) = (x + 1)/1
-    #x = 1 / (P-1) -1
+    #P = b + a/(x*d + c)
+    #x*d = a / (P-b) -c
 
-    #this is the distance between the two cameras in meters
-
-    return round(L*(a/(P-b) + c),2) #the a, b, c values are calculated by calcRegression
-
+    #return round(((a/(P-b) + c))*L,2) #can't do this well without calculus :(
+    slopeMap = {1.95:(1,0.8),1.75:(1.25,0.6),1.6:(1.5,0.2),1.55:(1.75,0.4)}
+    
+    position = 1.95
+    return (P-position)*slopeMap[position][1] + slopeMap[position][0]
+ 
 """
 Func: cleanSingleData
 Author: Jayden Chen
@@ -139,15 +197,12 @@ input: hand_landmarks, width, height
     
 output: P1 or P2
 
-remarks:
+remarks: need to rewrite
     
 """
 def cleanSingleData(hand_landmarks,width,height):
             
-    return disformula(((hand_landmarks.landmark[mp_hands.HandLandmark.WRIST].x*width,
-                        hand_landmarks.landmark[mp_hands.HandLandmark.WRIST].y*height),        
-                       (hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_TIP].x*width,
-                        hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_TIP].y*height))) 
+    return 0
 
 """
 Func: cleanCoupledData
@@ -161,9 +216,9 @@ output: P
 remarks:
     
 """
-def cleanCoupledData(a,b):
+def cleanCoupledData(P1,P2):
 
-    return b/a
+    return P1/P2
 
 """
 Func: twocamdis
@@ -174,11 +229,11 @@ input: P1, P2
     
 output: distance in meters
 
-remarks:
+remarks: need to rewrite
     
 """
 def twocamdis(P1,P2):
-    return calcDis(cleanCoupledData(P1,P2))
+    return 0
 
 """
 Func: CompleteTwocamdis
@@ -189,71 +244,106 @@ input: hand_landmarks * 2, width, height
     
 output: distance in meters
 
-remarks: will not be used in run.py, but useful for reference
+remarks: need to rewrite
     
 """
 def CompleteTwocamdis(hand_landmarks1,hand_landmarks2,width,height):
 
-    P1 = cleanSingleData(hand_landmarks1,width,height)
-    P2 = cleanSingleData(hand_landmarks2,width,height)
+    
 
-    P = cleanCoupledData(P1,P2)
+    return 0
 
-    dis = calcDis(P) 
-
-    return dis
-
-# sample
 def main():
+    #initialize mediapipe vision
+    base_options = python.BaseOptions(model_asset_path='efficientdet_lite0.tflite') #this is the model file, change file name if nesscary
+    options = vision.ObjectDetectorOptions(base_options=base_options,
+                                       score_threshold=0.5) #score threshold shows 
+    detector = vision.ObjectDetector.create_from_options(options)
 
     CAM1 = cv2.VideoCapture(0)
     CAM1.set(cv2.CAP_PROP_FOURCC,cv2.VideoWriter_fourcc('M','J','P','G'))
     CAM2 = cv2.VideoCapture(2)
-    CAM2.set(cv2.CAP_PROP_FOURCC,cv2.VideoWriter_fourcc('M','J','P','G'))
+    CAM2.set(cv2.CAP_PROP_FOURCC,cv2.VideoWriter_fourcc('M','J','P','G'))   
     #wait a while
     cv2.waitKey(1000)
+
+    print('starting')
  
     if CAM1.isOpened():
         if CAM2.isOpened():
             print("Camera Open!")
 
-            with mp_hands.Hands(
-                model_complexity=0,
-                min_detection_confidence=0.5,
-                min_tracking_confidence=0.5) as hands:
-                
-                print("Mediapipe Running!")
+            while True:
 
-                while True:
+                #get frame and success
+                read_code1, frame1 = CAM1.read()
+                read_code2, frame2 = CAM2.read()
 
-                    #get frame and success
-                    read_code1, frame1 = CAM1.read()
-                    read_code2, frame2 = CAM2.read()
+                if read_code1 and read_code2:
 
-                    # To improve performance, mark frames as not writeable to pass by reference
-                    frame1.flags.writeable = False
-                    frame1 = cv2.cvtColor(frame1,cv2.COLOR_BGR2RGB)
-                    results1 = hands.process(frame1)
-                    frame2.flags.writeable = False
-                    frame2 = cv2.cvtColor(frame2,cv2.COLOR_BGR2RGB)
-                    results2 = hands.process(frame2)
+                    print('Frame is found, proceding')
 
-                    if results1.multi_hand_landmarks:
-                        if results2.multi_hand_landmarks:
+                    #save image for formatting
+                    cv2.imwrite("frame1.jpg",frame1)
+                    frame1 = mp.Image.create_from_file("frame1.jpg")
+                    cv2.imwrite("frame2.jpg",frame2)
+                    frame2 = mp.Image.create_from_file("frame2.jpg")
 
-                            print('')
+                    #get results
+                    results1 = detector.detect(frame1)
+                    results2 = detector.detect(frame2)
+
+                    raw1 = ObjProperties(results1)
+                    raw2 = ObjProperties(results2)
+
+                    print(raw1,len(raw1))
+                    print(raw2,len(raw2))
+
+                    P1,X1 = cleanSuitcaseData(raw1)
+                    P2,X2 = cleanSuitcaseData(raw2)
+                    print(P1)
+                    print(P2)
+
+                    if P1 != 'NA' or P2 != 'NA':
+                        print('object detected')
+                        #if raw2['item'] == 'suitcase':
+                        P = cleanCoupledData(P1,P2)
+
+                        print(calcDis(P))
+                        distance1 = calcDis(P)
+                        distance2 = X1
+                    else:
+                        distance1 = 0
+                        distance2 = 0
+
                     
-                            for hand_landmarks1 in results1.multi_hand_landmarks:
-                                for hand_landmarks2 in results2.multi_hand_landmarks:
-                                    distance = CompleteTwocamdis(hand_landmarks1,hand_landmarks2)
+                    img = imgorg.copy()
 
-                    print("the current distance is ", distance,'m \n')
+                    x = int(140 + 120 * float(distance1))
+                    y = int(425 + 120 * float(distance2))
+                    cv2.circle(img,(y,x),20,(255,0,255))
+                    print('showing distance')
+                    cv2.imshow('canvas',img)
+                    cv2.waitKey(10)
+                        
+                    #show frames
+                    image1 = np.copy(frame1.numpy_view())
+                    annotated_image1,text1 = visualizeObject(image1, results1)
+                    rgb_annotated_image = cv2.cvtColor(annotated_image1, cv2.COLOR_BGR2RGB)
+                    cv2.imshow("image1",rgb_annotated_image)
+                    image2 = np.copy(frame2.numpy_view())
+                    annotated_image2,text2 = visualizeObject(image2, results2)
+                    rgb_annotated_image = cv2.cvtColor(annotated_image2, cv2.COLOR_BGR2RGB)
+                    cv2.imshow("image2",rgb_annotated_image)
 
-                    if cv2.waitKey(100) == 27:
-                        break
+                else:
+                    print('Frames are not found')
+
+                #if esc is pressed, break
+                if cv2.waitKey(90) == 27:
+                    break
     CAM1.release()
     CAM2.release()
     cv2.destroyAllWindows
 
-if __name__ == '__init__':
-    main()
+main()

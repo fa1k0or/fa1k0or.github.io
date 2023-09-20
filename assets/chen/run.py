@@ -1,10 +1,14 @@
 import twocamdis
 import cogni
+import obj
 
 import math
-import mediapipe as mp
 import cv2
 import numpy as np
+
+import mediapipe as mp
+from mediapipe.tasks import python
+from mediapipe.tasks.python import vision
 
 #initialize mediapip hands 
 mp_drawing = mp.solutions.drawing_utils
@@ -13,10 +17,6 @@ mp_hands = mp.solutions.hands
 
 img=cv2.imread('canvas.jpg')
 imgorg=img.copy()
-
-#initialize visual
-def cognition():
-    cogni.main()
 
 def visualizeDis():
 
@@ -31,16 +31,14 @@ def visualizeDis():
         cv2.imshow('canvas',img)
         cv2.waitKey(10)
 
-
 def cameraTest():
     for i in range(100):
         CAM1 = cv2.VideoCapture(i)
         print(i)
 
-
-
 """
-
+cam 1 = 2 (right up)
+cam2 = 0
 
 """
 def run():
@@ -104,7 +102,7 @@ def run():
                                     P2 = cogni.cogni(hand_landmarks2,frameWidth,frameHeight)
                                     print(P1,P2)
 
-                                    distance1 = 'na'
+                                    distance1 = 0
                                     if P1[1]:
                                     #if P1[0] and P2[0]:
                                         #distance = twocamdis.twocamdis(P1,P2)
@@ -163,18 +161,5 @@ def run():
     CAM2.release()
     cv2.destroyAllWindows
 
-if __name__ == "__main__":
-    x = input('insert func')
-    if 'run' in x:
-        print('running run()')
-        run()
-    elif 'cognition' in x:
-        print('running cognition')
-        cognition()
-    elif 'cameraTest' in x:
-        print('running cameraTest')
-        cameraTest()
-    elif 'visualizeDis' in x:
-        visualizeDis()
-    else:
-        print('do that again plz')
+if __name__ == '__main__':
+    twocamdis.main()
